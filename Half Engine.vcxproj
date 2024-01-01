@@ -118,14 +118,15 @@
       <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
       <ObjectFileName>$(IntDir)%(Filename).obj</ObjectFileName>
       <AdditionalOptions>/Fd"$(IntDir)$(TargetName).pdb" %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalIncludeDirectories>C:\Half Engine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Half Engine\3rdParty\opengl\include;C:\Half Engine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PrecompiledHeaderFile />
       <PrecompiledHeaderOutputFile />
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>hlCore.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>hlCore.lib;gdi32.lib;opengl32.lib;glu32.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Half Engine;C:\Half Engine\3rdParty\opengl\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <PreBuildEvent>
       <Command>echo Copying executable to bin directory...
@@ -149,7 +150,7 @@ exit 0</Command>
       <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
       <ObjectFileName>$(IntDir)%(Filename).obj</ObjectFileName>
       <AdditionalOptions>/Fd"$(IntDir)$(TargetName).pdb" %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalIncludeDirectories>C:\Half Engine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Half Engine\3rdParty\opengl\include;C:\Half Engine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PrecompiledHeaderFile />
       <PrecompiledHeaderOutputFile />
     </ClCompile>
@@ -158,7 +159,8 @@ exit 0</Command>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>hlCore.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>hlCore.lib;gdi32.lib;opengl32.lib;glu32.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Half Engine;C:\Half Engine\3rdParty\opengl\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <PreBuildEvent>
       <Command>echo Copying executable to bin directory...
@@ -175,6 +177,13 @@ exit 0</Command>
     <ClInclude Include="Common.hpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\Gear\3rdParty\opengl\glad.c" />
+    <ClCompile Include="hlEngine\hlBaseCamera.cpp" />
+    <ClCompile Include="hlEngine\hlDefines.cpp" />
+    <ClCompile Include="hlEngine\hlEngine.cpp" />
+    <ClCompile Include="hlEngine\hlInput.cpp" />
+    <ClCompile Include="hlRender\hlrDefines.cpp" />
+    <ClCompile Include="hlRender\hlRender.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>

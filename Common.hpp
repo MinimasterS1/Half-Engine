@@ -4,6 +4,7 @@
 #include <limits>
 #include <cstring>
 
+
 using s8 = int8_t;
 using u8 = uint8_t;
 using s16 = int16_t;
@@ -62,4 +63,20 @@ using string_path = char[max_path_size];
 #define CORE_API __declspec(dllimport)
 
 #endif
+
+#ifdef ENGINE_API_EXPORTS
+#define ENGINE_API __declspec(dllexport)
+#else
+#define ENGINE_API __declspec(dllimport)
+
+#endif
+
+
+#ifdef RENDER_API_EXPORTS
+#define RENDER_API __declspec(dllexport)
+#else
+#define RENDER_API __declspec(dllimport)
+
+#endif
+
 

@@ -1,3 +1,8 @@
 Run
 Run
 Run
+File: C:\Half Engine\hlCore\hlLogger.h, Line: 46 | Description: Failed to create GLFW window
+File: C:\Half Engine\hlCore\hlLogger.h, Line: 46 | Description: Failed to create GLFW window
+File: C:\Half Engine\hlCore\hlLogger.h, Line: 46 | Description: Failed to create GLFW window
+File: C:\Half Engine\hlCore\hlLogger.h, Line: 46 | Description: Failed to create GLFW window
+File: C:\Half Engine\hlCore\hlLogger.h, Line: 46 | Description: Failed to create GLFW window

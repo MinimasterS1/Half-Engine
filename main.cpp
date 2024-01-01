@@ -1,13 +1,13 @@
 ﻿#include "build_config.h"
-#include <iostream>
-#include "hlCore/hlLogger.h"
 
-Logger lo;
+#include"hlEngine/hlEngine.h"
+
+ class Engine& engine = Engine::GetInstance();
 
 int main(int argc, const char* argv[])
 {
-
-    lo.Log(Logger::LogLevel::Error, "Run");
+    engine.RunApplication();
+   
 
     return 0;
 }

@@ -1,1 +1,48 @@
 #pragma once
+
+#ifndef ENGINE_H
+#define ENGINE_H
+
+#include "Common.hpp"
+#include "hlInput.h"
+#include "hlRender/hlRender.h"
+
+#include <future>
+
+
+class ENGINE_API Engine
+{
+public:
+
+    static Engine& GetInstance();
+
+    void RunApplication();
+
+    void MainLoop();
+
+    void Update();
+
+    void RenderProcess();
+
+    void ShutDownApplication();
+
+    void AsyncLoadLevel();
+
+    Render gRenderManager;
+   
+    Input* gInputManager = nullptr;
+
+private:
+
+    Engine(const Engine&) = delete;
+    Engine& operator=(const Engine&) = delete;
+
+    Engine();
+
+    ~Engine();
+
+
+};
+
+
+#endif 

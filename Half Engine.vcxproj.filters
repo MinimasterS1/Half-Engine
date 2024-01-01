@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\3rd">
+      <UniqueIdentifier>{2822d7bd-efec-452a-b50f-bb98fc7e4121}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="build_config.h">
@@ -25,6 +28,27 @@
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hlEngine\hlEngine.cpp">
+      <Filter>Source Files\3rd</Filter>
+    </ClCompile>
+    <ClCompile Include="hlEngine\hlInput.cpp">
+      <Filter>Source Files\3rd</Filter>
+    </ClCompile>
+    <ClCompile Include="hlRender\hlrDefines.cpp">
+      <Filter>Source Files\3rd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Gear\3rdParty\opengl\glad.c">
+      <Filter>Source Files\3rd</Filter>
+    </ClCompile>
+    <ClCompile Include="hlRender\hlRender.cpp">
+      <Filter>Source Files\3rd</Filter>
+    </ClCompile>
+    <ClCompile Include="hlEngine\hlBaseCamera.cpp">
+      <Filter>Source Files\3rd</Filter>
+    </ClCompile>
+    <ClCompile Include="hlEngine\hlDefines.cpp">
+      <Filter>Source Files\3rd</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

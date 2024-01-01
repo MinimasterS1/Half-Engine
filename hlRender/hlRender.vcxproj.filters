@@ -13,15 +13,42 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\3rd">
+      <UniqueIdentifier>{14ba3fdf-9e40-475d-8e53-6d9c0e3638a4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="hlRender.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hlrDefines.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hlDevice.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="hlRender.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hlrDefines.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hlEngine\hlInput.cpp">
+      <Filter>Source Files\3rd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rdParty\opengl\glad.c">
+      <Filter>Source Files\3rd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hlCore\hlLogger.cpp">
+      <Filter>Source Files\3rd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hlEngine\hlBaseCamera.cpp">
+      <Filter>Source Files\3rd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hlEngine\hlDefines.cpp">
+      <Filter>Source Files\3rd</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

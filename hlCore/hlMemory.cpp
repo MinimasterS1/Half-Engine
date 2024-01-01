@@ -18,7 +18,6 @@ MemoryPool::MemoryPool(size_t initialSize, size_t maxSize) : max_size(maxSize)
     allocateBlock(initialSize);
 }
 
-
 void* MemoryPool::allocate(size_t size, size_t alignment)
 {
 
