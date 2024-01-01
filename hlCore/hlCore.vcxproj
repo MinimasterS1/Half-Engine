@@ -20,9 +20,11 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="hlLogger.h" />
+    <ClInclude Include="hlMemory.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="hlLogger.cpp" />
+    <ClCompile Include="hlMemory.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
