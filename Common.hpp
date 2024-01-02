@@ -86,6 +86,14 @@ using string_path = char[max_path_size];
 
 #endif
 
+#ifdef  EDITOR_API_API_EXPORTS
+#define EDITOR_API __declspec(dllexport)
+#else
+#define EDITOR_API __declspec(dllimport)
+
+#endif
+
+
 
 
 

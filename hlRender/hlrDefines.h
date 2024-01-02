@@ -12,9 +12,13 @@
 
 extern GLFWwindow* window;
 
+extern GLFWwindow* m_window;
+
 extern Logger RenderLog;
 
 extern int SCR_WIDTH, SCR_HEIGHT;
+
+extern bool EditorMode;
 
 
 

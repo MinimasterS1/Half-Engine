@@ -35,9 +35,9 @@ ResourceLoader::~ResourceLoader() {
 
 unsigned int ResourceLoader::LoadTexture(const char* path, const std::string& directory)
 {
-    std::string filename = std::string(path);
+    std::string filename = std::string(path);  
     filename = directory + '/' + filename;
-    std::cout << "Texture at path Load model: " << directory << std::endl;
+    std::cout << "Texture at path Load model : " << directory << std::endl;
     unsigned int textureID;
     glGenTextures(1, &textureID);
     int width, height, nrComponents;
@@ -64,21 +64,6 @@ unsigned int ResourceLoader::LoadTexture(const char* path, const std::string& di
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 
         stbi_image_free(data);
-
-        // Добавляем таймер, чтобы функция сработала через 5 секунд
-        std::thread timerThread([textureID]() {
-            auto start_time = std::chrono::high_resolution_clock::now();
-            auto end_time = start_time + std::chrono::seconds(5);
-
-            while (std::chrono::high_resolution_clock::now() < end_time) {
-                std::this_thread::sleep_for(std::chrono::milliseconds(100));
-            }
-
-            std::cout << "Function has been executed after 5 seconds. Texture ID: " << textureID << std::endl;
-            });
-
-        timerThread.detach(); // Отсоединяем поток, чтобы он работал независимо
-
     }
     else
     {
@@ -89,4 +74,5 @@ unsigned int ResourceLoader::LoadTexture(const char* path, const std::string& di
 
     return textureID;
 }
+
 

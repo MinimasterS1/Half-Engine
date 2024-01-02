@@ -25,6 +25,8 @@
     <ClInclude Include="hlInput.h" />
     <ClInclude Include="hlMesh.h" />
     <ClInclude Include="hlModel.h" />
+    <ClInclude Include="hlObject.h" />
+    <ClInclude Include="hlObjectList.h" />
     <ClInclude Include="hlShader.h" />
     <ClInclude Include="stbImage.h" />
   </ItemGroup>
@@ -40,6 +42,8 @@
     <ClCompile Include="hlInput.cpp" />
     <ClCompile Include="hlMesh.cpp" />
     <ClCompile Include="hlModel.cpp" />
+    <ClCompile Include="hlObject.cpp" />
+    <ClCompile Include="hlObjectList.cpp" />
     <ClCompile Include="hlShader.cpp" />
     <ClCompile Include="stbImage.cpp" />
   </ItemGroup>

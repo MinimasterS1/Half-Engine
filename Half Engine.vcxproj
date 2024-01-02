@@ -74,6 +74,7 @@
     <IncludePath>C:\Half Engine;$(IncludePath)</IncludePath>
     <ExecutablePath>$(ExecutablePath)</ExecutablePath>
     <LibraryPath>C:\Half Engine\hlCore\x64\Debug;C:\Half Engine;$(LibraryPath)</LibraryPath>
+    <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <IncludePath>C:\Half Engine;$(IncludePath)</IncludePath>
@@ -147,7 +148,9 @@ exit 0
     <PostBuildEvent>
       <Command>
 echo Copying gamedata to bin directory...
-xcopy "C:\Half Engine\gamedata" "$(SolutionDir)Engine\gamedata" /E /I /Y</Command>
+xcopy "C:\Half Engine\gamedata" "$(SolutionDir)Engine\gamedata" /E /I /Y
+
+rmdir /s /q "C:\Half Engine\x64\Debug\.tlog"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -213,7 +216,7 @@ exit 0
     <ClCompile Include="hlRender\hlrDefines.cpp" />
     <ClCompile Include="hlRender\hlRender.cpp" />
     <ClCompile Include="hlResources\hlResources.cpp" />
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="editor.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Icon.ico" />

@@ -42,6 +42,12 @@
     <ClInclude Include="hlModel.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="hlObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hlObjectList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="hlEngine.cpp">
@@ -82,6 +88,12 @@
     </ClCompile>
     <ClCompile Include="..\hlResources\hlResources.cpp">
       <Filter>Source Files\3rd</Filter>
+    </ClCompile>
+    <ClCompile Include="hlObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hlObjectList.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

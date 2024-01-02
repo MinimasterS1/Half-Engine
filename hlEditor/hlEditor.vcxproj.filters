@@ -13,15 +13,75 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\3rd">
+      <UniqueIdentifier>{994814be-e2a6-4b01-9765-ec8ca6716225}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="hlEditor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hlEditorConsole.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hlHeaderPanel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hlBrowser.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="hlEditor.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hlEditorConsole.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hlHeaderPanel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hlBrowser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hlRender\hlrDefines.cpp">
+      <Filter>Source Files\3rd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rdParty\imgui\backends\imgui_impl_glfw.cpp">
+      <Filter>Source Files\3rd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rdParty\imgui\backends\imgui_impl_opengl2.cpp">
+      <Filter>Source Files\3rd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rdParty\imgui\backends\imgui_impl_opengl3.cpp">
+      <Filter>Source Files\3rd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rdParty\imgui\misc\cpp\imgui_stdlib.cpp">
+      <Filter>Source Files\3rd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rdParty\imgui\imgui_tables.cpp">
+      <Filter>Source Files\3rd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rdParty\imgui\imgui_widgets.cpp">
+      <Filter>Source Files\3rd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rdParty\imgui\imgui.cpp">
+      <Filter>Source Files\3rd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rdParty\ImGuiFileDialog\ImGuiFileDialog.cpp">
+      <Filter>Source Files\3rd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rdParty\imgui\imgui_demo.cpp">
+      <Filter>Source Files\3rd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hlEngine\hlEngine.cpp">
+      <Filter>Source Files\3rd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hlEngine\hlObject.cpp">
+      <Filter>Source Files\3rd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hlEngine\hlModel.cpp">
+      <Filter>Source Files\3rd</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
