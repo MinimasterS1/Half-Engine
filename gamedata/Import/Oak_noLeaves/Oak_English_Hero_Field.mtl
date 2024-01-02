@@ -1,0 +1,21 @@
+# Wavefront Object Material File
+# Generated using SpeedTree tools
+
+newmtl Oak_Bark_2_Mat
+map_Kd Oak_Bark_2_Color.png
+map_bump Oak_Bark_2_Normal.png
+bump Oak_Bark_2_Normal.png -bm 1
+
+
+newmtl White_Oak_Cap_Mat
+map_Kd White_Oak_Cap_Color.png
+map_bump White_Oak_Cap_Normal.png
+bump White_Oak_Cap_Normal.png -bm 1
+
+
+newmtl Oak_English_Hero_Field_Mat
+map_Kd Oak_English_Hero_Field_Color.png
+map_bump Oak_English_Hero_Field_Normal.png
+bump Oak_English_Hero_Field_Normal.png -bm 1
+
+

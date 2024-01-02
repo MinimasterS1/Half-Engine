@@ -33,6 +33,7 @@
     <ClCompile Include="..\hlCore\hlLogger.cpp" />
     <ClCompile Include="..\hlRender\hlrDefines.cpp" />
     <ClCompile Include="..\hlRender\hlRender.cpp" />
+    <ClCompile Include="..\hlResources\hlResources.cpp" />
     <ClCompile Include="hlBaseCamera.cpp" />
     <ClCompile Include="hlDefines.cpp" />
     <ClCompile Include="hlEngine.cpp" />
@@ -176,8 +177,8 @@ copy "C:\Half Engine\hlEngine\x64\Debug\hlEngine.dll" "C:\Half Engine\x64\Debug"
       <AdditionalDependencies>gdi32.lib;opengl32.lib;glu32.lib;glfw3.lib;assimp-vc143-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>copy "C:\Half Engine\hlEngie\x64\Release\hlEngine.dll" "C:\Half Engine\Engine\bin"
-copy "C:\Half Engine\hlEngie\x64\Release\hlEngine.dll" "C:\Half Engine\x64\Release"</Command>
+      <Command>copy "C:\Half Engine\hlEngine\x64\Release\hlEngine.dll" "C:\Half Engine\Engine\bin"
+</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

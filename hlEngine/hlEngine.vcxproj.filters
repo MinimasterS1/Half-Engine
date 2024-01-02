@@ -50,9 +50,6 @@
     <ClCompile Include="hlInput.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Gear\3rdParty\opengl\glad.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="hlBaseCamera.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -79,6 +76,12 @@
     </ClCompile>
     <ClCompile Include="hlModel.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Gear\3rdParty\opengl\glad.c">
+      <Filter>Source Files\3rd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hlResources\hlResources.cpp">
+      <Filter>Source Files\3rd</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

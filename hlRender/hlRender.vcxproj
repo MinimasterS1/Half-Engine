@@ -29,6 +29,10 @@
     <ClCompile Include="..\hlEngine\hlBaseCamera.cpp" />
     <ClCompile Include="..\hlEngine\hlDefines.cpp" />
     <ClCompile Include="..\hlEngine\hlInput.cpp" />
+    <ClCompile Include="..\hlEngine\hlMesh.cpp" />
+    <ClCompile Include="..\hlEngine\hlModel.cpp" />
+    <ClCompile Include="..\hlEngine\hlShader.cpp" />
+    <ClCompile Include="..\hlEngine\stbImage.cpp" />
     <ClCompile Include="hlrDefines.cpp" />
     <ClCompile Include="hlRender.cpp" />
   </ItemGroup>
@@ -128,14 +132,14 @@
       <PrecompiledHeaderFile>
       </PrecompiledHeaderFile>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>C:\Half Engine\3rdParty\opengl\include;C:\Half Engine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Half Engine\3rdParty\assimp\include;C:\Half Engine\3rdParty\opengl\include;C:\Half Engine\3rdParty\assimp\build\include;C:\Half Engine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
-      <AdditionalLibraryDirectories>C:\Half Engine\3rdParty\opengl\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>gdi32.lib;opengl32.lib;glu32.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Half Engine\3rdParty\opengl\lib;C:\Half Engine\3rdParty\assimp\build\lib\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>gdi32.lib;opengl32.lib;glu32.lib;glfw3.lib;assimp-vc143-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
       <Command>copy "C:\Half Engine\hlRender\x64\Debug\hlRender.dll" "C:\Half Engine\Engine\bin"</Command>
@@ -153,6 +157,7 @@
       <PrecompiledHeaderFile>
       </PrecompiledHeaderFile>
       <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>C:\Half Engine\3rdParty\assimp\include;C:\Half Engine\3rdParty\opengl\include;C:\Half Engine\3rdParty\assimp\build\include;C:\Half Engine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -160,6 +165,8 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
+      <AdditionalLibraryDirectories>C:\Half Engine\3rdParty\opengl\lib;C:\Half Engine\3rdParty\assimp\build\lib\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>gdi32.lib;opengl32.lib;glu32.lib;glfw3.lib;assimp-vc143-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
       <Command>copy "C:\Half Engine\hlRender\x64\Release\hlRender.dll" "C:\Half Engine\Engine\bin"</Command>

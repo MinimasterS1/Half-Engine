@@ -118,24 +118,36 @@
       <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
       <ObjectFileName>$(IntDir)%(Filename).obj</ObjectFileName>
       <AdditionalOptions>/Fd"$(IntDir)$(TargetName).pdb" %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalIncludeDirectories>C:\Half Engine\3rdParty\opengl\include;C:\Half Engine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Half Engine\3rdParty\assimp\build\include;C:\Half Engine\3rdParty\opengl\include;C:\Half Engine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PrecompiledHeaderFile />
       <PrecompiledHeaderOutputFile />
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>hlCore.lib;gdi32.lib;opengl32.lib;glu32.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:\Half Engine;C:\Half Engine\3rdParty\opengl\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>hlCore.lib;gdi32.lib;opengl32.lib;glu32.lib;glfw3.lib;assimp-vc143-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Half Engine\3rdParty\assimp\build\lib\Release;C:\Half Engine;C:\Half Engine\3rdParty\opengl\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <PreBuildEvent>
       <Command>echo Copying executable to bin directory...
 xcopy "$(TargetPath)" "$(SolutionDir)Engine\bin\" /Y /D /E /C /I /Q /H /R /K
 
-exit 0</Command>
+echo Copying Shaders to bin directory...
+xcopy "C:\Half Engine\Shaders" "$(SolutionDir)Engine\Shaders" /E /I /Y
+
+
+xcopy /y "$(TargetPath)" "C:\Half Engine\Engine\bin"
+copy /y "$(TargetPath)" "C:\Half Engine\Engine\bin"
+
+exit 0
+
+
+</Command>
     </PreBuildEvent>
     <PostBuildEvent>
-      <Command>rmdir /s /q "$(SolutionDir)HalfEngine.tlog"</Command>
+      <Command>
+echo Copying gamedata to bin directory...
+xcopy "C:\Half Engine\gamedata" "$(SolutionDir)Engine\gamedata" /E /I /Y</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -150,7 +162,7 @@ exit 0</Command>
       <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
       <ObjectFileName>$(IntDir)%(Filename).obj</ObjectFileName>
       <AdditionalOptions>/Fd"$(IntDir)$(TargetName).pdb" %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalIncludeDirectories>C:\Half Engine\3rdParty\opengl\include;C:\Half Engine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Half Engine\3rdParty\assimp\build\include;C:\Half Engine\3rdParty\opengl\include;C:\Half Engine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PrecompiledHeaderFile />
       <PrecompiledHeaderOutputFile />
     </ClCompile>
@@ -159,14 +171,26 @@ exit 0</Command>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>hlCore.lib;gdi32.lib;opengl32.lib;glu32.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:\Half Engine;C:\Half Engine\3rdParty\opengl\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>hlCore.lib;gdi32.lib;opengl32.lib;glu32.lib;glfw3.lib;assimp-vc143-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Half Engine\3rdParty\assimp\build\lib\Release;C:\Half Engine;C:\Half Engine\3rdParty\opengl\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <PreBuildEvent>
       <Command>echo Copying executable to bin directory...
 xcopy "$(TargetPath)" "$(SolutionDir)Engine\bin\" /Y /D /E /C /I /Q /H /R /K
 
-exit 0</Command>
+echo Copying Shaders to bin directory...
+xcopy "C:\Half Engine\Shaders" "$(SolutionDir)Engine\Shaders" /E /I /Y
+
+echo Copying gamedata to bin directory...
+xcopy "C:\Half Engine\gamedata" "$(SolutionDir)Engine\gamedata" /E /I /Y
+
+xcopy /y "$(TargetPath)" "C:\Half Engine\Engine\bin"
+copy /y "$(TargetPath)" "C:\Half Engine\Engine\bin"
+
+exit 0
+
+
+</Command>
     </PreBuildEvent>
     <PostBuildEvent>
       <Command>rmdir /s /q "$(SolutionDir)HalfEngine.tlog"</Command>
@@ -182,8 +206,13 @@ exit 0</Command>
     <ClCompile Include="hlEngine\hlDefines.cpp" />
     <ClCompile Include="hlEngine\hlEngine.cpp" />
     <ClCompile Include="hlEngine\hlInput.cpp" />
+    <ClCompile Include="hlEngine\hlMesh.cpp" />
+    <ClCompile Include="hlEngine\hlModel.cpp" />
+    <ClCompile Include="hlEngine\hlShader.cpp" />
+    <ClCompile Include="hlEngine\stbImage.cpp" />
     <ClCompile Include="hlRender\hlrDefines.cpp" />
     <ClCompile Include="hlRender\hlRender.cpp" />
+    <ClCompile Include="hlResources\hlResources.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>

@@ -79,4 +79,13 @@ using string_path = char[max_path_size];
 
 #endif
 
+#ifdef RESOURCES_API_API_EXPORTS
+#define RESOURCES_API __declspec(dllexport)
+#else
+#define RESOURCES_API __declspec(dllimport)
+
+#endif
+
+
+
 

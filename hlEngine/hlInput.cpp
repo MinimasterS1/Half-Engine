@@ -1,4 +1,5 @@
 #include "hlInput.h"
+#include "hlDefines.h"
 
 
 Input::Input(Camera& cam) : camera(cam), FirstMouse(true)
@@ -12,10 +13,11 @@ Input::Input(Camera& cam) : camera(cam), FirstMouse(true)
 
 Input::~Input() {}
 
-void Input::startUp() {
+void Input::startUp() 
+{
 
-
-
+    engineLog.Log(Logger::LogLevel::Info, "InputManager Start", NULL);
+    
 
 }
 
@@ -27,6 +29,7 @@ void Input::shutDown() {
 void Input::update(GLFWwindow* window, float deltaTime) {
 
     ProcessInput(window, deltaTime);
+  
 }
 
 void Input::MouseCallback(GLFWwindow* window, double xpos, double ypos)
@@ -38,6 +41,17 @@ void Input::MouseCallback(GLFWwindow* window, double xpos, double ypos)
         Last_Y = ypos;
         FirstMouse = false;
     }
+
+
+      float xoffset = xpos - Last_X;
+      float yoffset = Last_Y - ypos;
+
+      Last_X = xpos;
+      Last_Y = ypos;
+
+        camera.ProcessMouseMovement(xoffset, yoffset);
+
+ 
 
 
 }
@@ -63,12 +77,17 @@ void Input::ProcessInput(GLFWwindow* window, float deltaTime)
             camera.ProcessKeyboard(FORWARD, deltaTime);
 
         if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS)
-            camera.ProcessKeyboard(BACKWARD, deltaTime);
+         camera.ProcessKeyboard(BACKWARD, deltaTime);
+   
         if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS)
             camera.ProcessKeyboard(LEFT, deltaTime);
         if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
+        {
             camera.ProcessKeyboard(RIGHT, deltaTime);
+         
+        }
     }
+
 
 
 }

@@ -1,8 +1,16 @@
-#include "hlRender.h"
+﻿#include "hlRender.h"
 #include "hlDevice.h"
 
 #include "hlCore/hlMemory.h"
 
+#include "hlEngine/hlShader.h"
+#include "hlEngine/hlModel.h"
+
+Shader testShader;
+Model testModel;
+
+
+bool firstMouse = true;
 
 Render::Render()
 {
@@ -85,10 +93,17 @@ void Render::CreateWindow()
     glEnable(GL_DEPTH_TEST);
 
 
+    stbi_set_flip_vertically_on_load(true);
+
+   
+   
+    testShader = Shader("C:/Half Engine/Engine/Shaders/model.vs", "C:/Half Engine/Engine/Shaders/model.fs");
+    testModel = Model("C:/Half Engine/Engine/gamedata/terrain.obj");
 }
 
 void Render::RenderCycle()
 {
+   
     float currentFrame = glfwGetTime();
     DeltaTime = currentFrame - LastFrame;
     LastFrame = currentFrame;
@@ -96,11 +111,33 @@ void Render::RenderCycle()
 
     input->update(window, DeltaTime);
 
-
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     glClearColor(0.5f, 0.5f, 0.5f, 1.0f);
-    glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_NORMAL);
+   
+    glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
+  
+    testShader.use();
 
+   camera.projection = glm::perspective(glm::radians(camera.Zoom), (float)SCR_WIDTH / (float)SCR_HEIGHT, 0.1f, 100.0f);
+    glm::mat4 view = camera.GetViewMatrix();
+    
+    testShader.setMat4("projection", camera.projection);
+    testShader.setMat4("view", view);
+
+    GL_Check("no");
+
+
+    // Рендеринг загруженной модели
+    glm::mat4 model = glm::mat4(1.0f);
+    model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f)); // смещаем вниз чтобы быть в центре сцены
+   model = glm::scale(model, glm::vec3(1.0f, 1.0f, 1.0f));	// объект слишком большой для нашей сцены, поэтому немного уменьшим его
+    testShader.setMat4("model", model);
+    testModel.Draw(testShader);
+
+   // GLint numTriangles;
+   // glGetProgramiv(testShader.GetShaderID(), GL_GEOMETRY_VERTICES_OUT, &numTriangles);
+   
+    //glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLE);
 
     glfwSwapBuffers(window);
    return;

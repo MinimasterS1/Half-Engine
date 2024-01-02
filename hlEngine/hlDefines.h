@@ -8,7 +8,7 @@
 #include "hlBaseCamera.h"
 
 extern ENGINE_API Logger engineLog;
-extern ENGINE_API Camera camera;
+extern Camera camera;
 
 
 
