@@ -7,6 +7,7 @@
 #include "hlBrowser.h"
 
 #include "hlEngine/hlEngine.h"
+#include "hlEngine/hlObjectList.h"
 
 
 #include <glad/glad.h>
@@ -18,7 +19,7 @@ MemoryPool EditorMemo(800, 1024);
 MemoryPool BrowserMemory(800, 1024);
 
 HeaderPanel* headerPanel = new HeaderPanel();
-Console* console = new Console;
+EditorConsole* console = new EditorConsole;
 ContentBrowser* browser = new ContentBrowser;
 //ParticleUI* particles = nullptr;
 
@@ -62,7 +63,7 @@ Editor::Editor(GLFWwindow* window, const char* text)
 
         HeaderPanel* headerPanel = new(EditorMemo.allocate(sizeof(HeaderPanel))) HeaderPanel();
 
-        Console* console = new(ConsoleMemory.allocate(sizeof(Console))) Console();
+        EditorConsole* console = new(ConsoleMemory.allocate(sizeof(EditorConsole))) EditorConsole();
 
         ContentBrowser* contentBrowser = new(BrowserMemory.allocate(sizeof(ContentBrowser))) ContentBrowser();
 

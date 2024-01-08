@@ -12,19 +12,22 @@ Model testModel;
 
 bool firstMouse = true;
 
-Render::Render()
+Render::Render() //: EditorUI(nullptr)
 {
 
 }
 
 Render::~Render()
 {
-
+    input->shutDown();
+    delete input;
 }
 
 void Render::startUp()
 {
     CreateWindow();
+
+    EditorUI.reset(new Editor(window, "editor"));
 
 }
 
@@ -134,10 +137,10 @@ void Render::RenderCycle()
     testShader.setMat4("model", model);
     testModel.Draw(testShader);
 
-   // GLint numTriangles;
-   // glGetProgramiv(testShader.GetShaderID(), GL_GEOMETRY_VERTICES_OUT, &numTriangles);
-   
-    //glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLE);
+
+  
+
+
 
     glfwSwapBuffers(window);
    return;

@@ -57,12 +57,16 @@ constexpr size_t max_path_size = 2 * _MAX_PATH;
 using string_path = char[max_path_size];
 
 
+
+
 #ifdef CORE_API_EXPORTS
 #define CORE_API __declspec(dllexport)
 #else
 #define CORE_API __declspec(dllimport)
 
 #endif
+
+
 
 #ifdef ENGINE_API_EXPORTS
 #define ENGINE_API __declspec(dllexport)
@@ -86,12 +90,7 @@ using string_path = char[max_path_size];
 
 #endif
 
-#ifdef  EDITOR_API_API_EXPORTS
-#define EDITOR_API __declspec(dllexport)
-#else
-#define EDITOR_API __declspec(dllimport)
 
-#endif
 
 
 

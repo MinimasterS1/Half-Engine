@@ -3,7 +3,7 @@
 #ifndef MESH_H
 #define MESH_H
 
-#include "Common.hpp"
+#include "hlDefines.h"
 #include <glad/glad.h> 
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
@@ -43,7 +43,6 @@ public:
     void Initialize(vector<Vertex> vertices, vector<unsigned int> indices, vector<Texture> textures);
     void Draw(Shader& shader);
 
-private:
     void setupMesh();
 
     unsigned int VAO;
@@ -51,6 +50,9 @@ private:
     vector<Vertex> vertices;
     vector<unsigned int> indices;
     vector<Texture> textures;
+
+
+   
 };
 
 #endif // MESH_H

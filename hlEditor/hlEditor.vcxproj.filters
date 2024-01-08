@@ -44,25 +44,7 @@
     <ClCompile Include="hlBrowser.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\hlRender\hlrDefines.cpp">
-      <Filter>Source Files\3rd</Filter>
-    </ClCompile>
-    <ClCompile Include="..\3rdParty\imgui\backends\imgui_impl_glfw.cpp">
-      <Filter>Source Files\3rd</Filter>
-    </ClCompile>
-    <ClCompile Include="..\3rdParty\imgui\backends\imgui_impl_opengl2.cpp">
-      <Filter>Source Files\3rd</Filter>
-    </ClCompile>
-    <ClCompile Include="..\3rdParty\imgui\backends\imgui_impl_opengl3.cpp">
-      <Filter>Source Files\3rd</Filter>
-    </ClCompile>
     <ClCompile Include="..\3rdParty\imgui\misc\cpp\imgui_stdlib.cpp">
-      <Filter>Source Files\3rd</Filter>
-    </ClCompile>
-    <ClCompile Include="..\3rdParty\imgui\imgui_tables.cpp">
-      <Filter>Source Files\3rd</Filter>
-    </ClCompile>
-    <ClCompile Include="..\3rdParty\imgui\imgui_widgets.cpp">
       <Filter>Source Files\3rd</Filter>
     </ClCompile>
     <ClCompile Include="..\3rdParty\imgui\imgui.cpp">
@@ -74,13 +56,25 @@
     <ClCompile Include="..\3rdParty\imgui\imgui_demo.cpp">
       <Filter>Source Files\3rd</Filter>
     </ClCompile>
-    <ClCompile Include="..\hlEngine\hlEngine.cpp">
+    <ClCompile Include="..\3rdParty\imgui\imgui_draw.cpp">
       <Filter>Source Files\3rd</Filter>
     </ClCompile>
-    <ClCompile Include="..\hlEngine\hlObject.cpp">
+    <ClCompile Include="..\3rdParty\imgui\imgui_tables.cpp">
       <Filter>Source Files\3rd</Filter>
     </ClCompile>
-    <ClCompile Include="..\hlEngine\hlModel.cpp">
+    <ClCompile Include="..\3rdParty\imgui\imgui_widgets.cpp">
+      <Filter>Source Files\3rd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rdParty\imgui\backends\imgui_impl_opengl3.cpp">
+      <Filter>Source Files\3rd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rdParty\imgui\backends\imgui_impl_glfw.cpp">
+      <Filter>Source Files\3rd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hlEngine\hlObjectList.cpp">
+      <Filter>Source Files\3rd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hlRender\hlrDefines.cpp">
       <Filter>Source Files\3rd</Filter>
     </ClCompile>
   </ItemGroup>

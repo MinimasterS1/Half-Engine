@@ -4,10 +4,10 @@
 #define CONTENT_BROWSER_H
 
 #include "hlEditor.h"
-
 #include "hlEngine/hlEngine.h"
 #include "hlEngine/hlObjectList.h"
 #include "hlEngine/hlObject.h"
+
 
 #include <functional>
 #include <filesystem>

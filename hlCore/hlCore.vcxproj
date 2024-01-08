@@ -116,7 +116,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;HLCORE_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>CORE_API_EXPORTS</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>
@@ -128,11 +128,11 @@
       <SubSystem>Windows</SubSystem>
       <EnableUAC>false</EnableUAC>
       <ProgramDatabaseFile />
+      <AdditionalLibraryDirectories>C:\Half Engine</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent>
       <Command>copy "C:\Half Engine\hlCore\x64\Debug\hlCore.dll" "C:\Half Engine\Engine\bin"
 copy "C:\Half Engine\hlCore\x64\Debug\hlCore.dll" "C:\Half Engine\x64\Debug"
-
 </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
@@ -142,7 +142,7 @@ copy "C:\Half Engine\hlCore\x64\Debug\hlCore.dll" "C:\Half Engine\x64\Debug"
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>NDEBUG;HLCORE_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>CORE_API_EXPORTS</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>
@@ -157,6 +157,7 @@ copy "C:\Half Engine\hlCore\x64\Debug\hlCore.dll" "C:\Half Engine\x64\Debug"
       <EnableUAC>false</EnableUAC>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ProgramDatabaseFile />
+      <AdditionalLibraryDirectories>C:\Half Engine</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent>
       <Command>copy "C:\Half Engine\hlCore\x64\Release\hlCore.dll" "C:\Half Engine\Engine\bin"

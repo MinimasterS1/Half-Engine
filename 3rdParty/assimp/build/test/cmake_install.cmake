@@ -1,4 +1,4 @@
-# Install script for directory: C:/Gear/3rdParty/assimp/test
+# Install script for directory: C:/Half Engine/3rdParty/assimp/test
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Gear/3rdParty/assimp/build/test/headercheck/cmake_install.cmake")
+  include("C:/Half Engine/3rdParty/assimp/build/test/headercheck/cmake_install.cmake")
 
 endif()
 

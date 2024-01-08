@@ -5,9 +5,7 @@
 
 #include "Common.hpp"
 #include "hlDefines.h"
-
-#include <GLFW/glfw3.h>
- 
+ #include <glfw/glfw3.h> 
 
 class  ENGINE_API  Input{
 public:
@@ -25,11 +23,10 @@ public:
     void update(GLFWwindow* window, float deltaTime);
 
     void MouseCallback(GLFWwindow* window, double xpos, double ypos);
-
     void ScrollCallback(GLFWwindow* window, double xoffset, double yoffset);
 
     void ProcessInput(GLFWwindow* window, float deltaTime);
-
+     
     void ProcessSingleKeyPress(GLFWwindow* window, int key, int action);
 
 
@@ -40,8 +37,6 @@ public:
 
         return a + t * (b - a);
     }
-
-
 
 private:
 

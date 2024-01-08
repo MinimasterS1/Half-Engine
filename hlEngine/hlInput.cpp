@@ -1,5 +1,4 @@
 #include "hlInput.h"
-#include "hlDefines.h"
 
 
 Input::Input(Camera& cam) : camera(cam), FirstMouse(true)
@@ -62,6 +61,8 @@ void Input::ScrollCallback(GLFWwindow* window, double xoffset, double yoffset)
 
 }
 
+
+
 void Input::ProcessSingleKeyPress(GLFWwindow* window, int key, int action)
 {
 
@@ -69,9 +70,7 @@ void Input::ProcessSingleKeyPress(GLFWwindow* window, int key, int action)
 
 void Input::ProcessInput(GLFWwindow* window, float deltaTime)
 {
-
-    {
-        if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
+       if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
             glfwSetWindowShouldClose(window, true);
         if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
             camera.ProcessKeyboard(FORWARD, deltaTime);
@@ -85,9 +84,5 @@ void Input::ProcessInput(GLFWwindow* window, float deltaTime)
         {
             camera.ProcessKeyboard(RIGHT, deltaTime);
          
-        }
-    }
-
-
-
+        }  
 }

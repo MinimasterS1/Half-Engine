@@ -1,78 +1,78 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="C:\Gear\3rdParty\assimp\build\CMakeFiles\90e7d3b2ad15d6277f63dd6c3523d864\generate.stamp.rule">
+    <CustomBuild Include="C:\Half Engine\3rdParty\assimp\build\CMakeFiles\f01df2949c85df134cb9ea511ea95e12\generate.stamp.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <None Include="C:\Gear\3rdParty\assimp\assimp.pc.in">
+    <None Include="C:\Half Engine\3rdParty\assimp\assimp.pc.in">
       <Filter>Buildsystem Input Files</Filter>
     </None>
-    <None Include="C:\Gear\3rdParty\assimp\cmake-modules\FindPkgMacros.cmake">
+    <None Include="C:\Half Engine\3rdParty\assimp\cmake-modules\FindPkgMacros.cmake">
       <Filter>Buildsystem Input Files\cmake-modules</Filter>
     </None>
-    <None Include="C:\Gear\3rdParty\assimp\cmake-modules\PrecompiledHeader.cmake">
+    <None Include="C:\Half Engine\3rdParty\assimp\cmake-modules\PrecompiledHeader.cmake">
       <Filter>Buildsystem Input Files\cmake-modules</Filter>
     </None>
-    <None Include="C:\Gear\3rdParty\assimp\cmake-modules\assimp-plain-config.cmake.in">
+    <None Include="C:\Half Engine\3rdParty\assimp\cmake-modules\assimp-plain-config.cmake.in">
       <Filter>Buildsystem Input Files\cmake-modules</Filter>
     </None>
-    <None Include="C:\Gear\3rdParty\assimp\cmake-modules\cmake_uninstall.cmake.in">
+    <None Include="C:\Half Engine\3rdParty\assimp\cmake-modules\cmake_uninstall.cmake.in">
       <Filter>Buildsystem Input Files\cmake-modules</Filter>
     </None>
-    <None Include="C:\Gear\3rdParty\assimp\code\CMakeLists.txt">
+    <None Include="C:\Half Engine\3rdParty\assimp\code\CMakeLists.txt">
       <Filter>Buildsystem Input Files\code</Filter>
     </None>
-    <None Include="C:\Gear\3rdParty\assimp\contrib\zlib\CMakeLists.txt">
+    <None Include="C:\Half Engine\3rdParty\assimp\contrib\zlib\CMakeLists.txt">
       <Filter>Buildsystem Input Files\contrib\zlib</Filter>
     </None>
-    <None Include="C:\Gear\3rdParty\assimp\contrib\zlib\zconf.h.cmakein">
+    <None Include="C:\Half Engine\3rdParty\assimp\contrib\zlib\zconf.h.cmakein">
       <Filter>Buildsystem Input Files\contrib\zlib</Filter>
     </None>
-    <None Include="C:\Gear\3rdParty\assimp\contrib\zlib\zlib.pc.cmakein">
+    <None Include="C:\Half Engine\3rdParty\assimp\contrib\zlib\zlib.pc.cmakein">
       <Filter>Buildsystem Input Files\contrib\zlib</Filter>
     </None>
-    <None Include="C:\Gear\3rdParty\assimp\include\assimp\config.h.in">
+    <None Include="C:\Half Engine\3rdParty\assimp\include\assimp\config.h.in">
       <Filter>Buildsystem Input Files\include\assimp</Filter>
     </None>
-    <None Include="C:\Gear\3rdParty\assimp\revision.h.in">
+    <None Include="C:\Half Engine\3rdParty\assimp\revision.h.in">
       <Filter>Buildsystem Input Files</Filter>
     </None>
-    <None Include="C:\Gear\3rdParty\assimp\test\CMakeLists.txt">
+    <None Include="C:\Half Engine\3rdParty\assimp\test\CMakeLists.txt">
       <Filter>Buildsystem Input Files\test</Filter>
     </None>
-    <None Include="C:\Gear\3rdParty\assimp\test\headercheck\CMakeLists.txt">
+    <None Include="C:\Half Engine\3rdParty\assimp\test\headercheck\CMakeLists.txt">
       <Filter>Buildsystem Input Files\test\headercheck</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{D237975E-8C24-3126-848F-4F451F3265D2}</UniqueIdentifier>
+      <UniqueIdentifier>{74EA6E83-3651-3C54-AF57-E84507D73F7B}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files">
-      <UniqueIdentifier>{8C357DDF-0651-362D-AEB3-FD921C86BD8D}</UniqueIdentifier>
+      <UniqueIdentifier>{6FC622B6-8099-3808-9D52-6465CD52569A}</UniqueIdentifier>
     </Filter>
     <Filter Include="Buildsystem Input Files">
-      <UniqueIdentifier>{F256034F-3A57-33C7-85B1-077E25F39F00}</UniqueIdentifier>
+      <UniqueIdentifier>{91F9FC9C-EEDD-3F3E-81C6-3DDF98AC674A}</UniqueIdentifier>
     </Filter>
     <Filter Include="Buildsystem Input Files\cmake-modules">
-      <UniqueIdentifier>{D79741C3-9FD5-33BE-9920-1693A674DDBB}</UniqueIdentifier>
+      <UniqueIdentifier>{4FAC5B25-C669-31C8-AA5A-F5AC31F1E428}</UniqueIdentifier>
     </Filter>
     <Filter Include="Buildsystem Input Files\code">
-      <UniqueIdentifier>{CDCA66A1-1844-3C46-8914-4A36512E9ECC}</UniqueIdentifier>
+      <UniqueIdentifier>{492C4303-F666-3BBD-8B56-2A6917AB7111}</UniqueIdentifier>
     </Filter>
     <Filter Include="Buildsystem Input Files\contrib\zlib">
-      <UniqueIdentifier>{B106C3D8-A013-3DB6-8A12-ABCDE9480E74}</UniqueIdentifier>
+      <UniqueIdentifier>{EF5108AC-D727-3E96-8030-A8598C43BF04}</UniqueIdentifier>
     </Filter>
     <Filter Include="Buildsystem Input Files\include\assimp">
-      <UniqueIdentifier>{3898EE43-9EFB-30EC-B5FE-9B292C0184B8}</UniqueIdentifier>
+      <UniqueIdentifier>{86452EC9-2012-3329-9FE7-64BC30BCFBED}</UniqueIdentifier>
     </Filter>
     <Filter Include="Buildsystem Input Files\test">
-      <UniqueIdentifier>{22A64F08-CCF7-3264-97B1-1D09276925CA}</UniqueIdentifier>
+      <UniqueIdentifier>{8DE323DA-C110-34BA-9768-5FD644F67A74}</UniqueIdentifier>
     </Filter>
     <Filter Include="Buildsystem Input Files\test\headercheck">
-      <UniqueIdentifier>{F75A471B-3706-30F0-8F2B-70B37523505A}</UniqueIdentifier>
+      <UniqueIdentifier>{7D769060-DD99-36C6-BF42-CBD43100B3E4}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

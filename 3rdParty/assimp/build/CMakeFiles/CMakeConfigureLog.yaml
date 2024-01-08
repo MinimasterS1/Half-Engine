@@ -18,35 +18,26 @@ events:
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
       Compiler:  
-      Build flags: /DWIN32;/D_WINDOWS
+      Build flags: 
       Id flags:  
       
       The output was:
       0
       MSBuild version 17.6.3+07e294721 for .NET Framework
-      Build started 30.12.2023 18:08:40.
+      Build started 07.01.2024 12:48:26.
       
-      Project "C:\\Gear\\3rdParty\\assimp\\build\\CMakeFiles\\3.27.0\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
+      Project "C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\3.27.0\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
       PrepareForBuild:
         Creating directory "Debug\\".
         Creating directory "Debug\\CompilerIdC.tlog\\".
       InitializeBuildStatus:
         Creating "Debug\\CompilerIdC.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-      VcpkgTripletSelection:
-        Using triplet "x64-windows" from "C:\\Gears\\3rdParty\\vcpkg\\installed\\x64-windows\\"
-        Using normalized configuration "Release"
       ClCompile:
-        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Gears\\3rdParty\\vcpkg\\installed\\x64-windows\\include" /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
         CMakeCCompilerId.c
       Link:
-        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\\Gears\\3rdParty\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"C:\\Gears\\3rdParty\\vcpkg\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib "C:\\Gears\\3rdParty\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
-        CompilerIdC.vcxproj -> C:\\Gear\\3rdParty\\assimp\\build\\CMakeFiles\\3.27.0\\CompilerIdC\\CompilerIdC.exe
-      AppLocalFromInstalled:
-        pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Gears\\3rdParty\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Gear\\3rdParty\\assimp\\build\\CMakeFiles\\3.27.0\\CompilerIdC\\CompilerIdC.exe" "C:\\Gears\\3rdParty\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdC.tlog\\CompilerIdC.write.1u.tlog" "Debug\\vcpkg.applocal.log"
-        'pwsh.exe' is not recognized as an internal or external command,
-        operable program or batch file.
-        The command "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Gears\\3rdParty\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Gear\\3rdParty\\assimp\\build\\CMakeFiles\\3.27.0\\CompilerIdC\\CompilerIdC.exe" "C:\\Gears\\3rdParty\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdC.tlog\\CompilerIdC.write.1u.tlog" "Debug\\vcpkg.applocal.log"" exited with code 9009.
-        "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\Gears\\3rdParty\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Gear\\3rdParty\\assimp\\build\\CMakeFiles\\3.27.0\\CompilerIdC\\CompilerIdC.exe" "C:\\Gears\\3rdParty\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdC.tlog\\CompilerIdC.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
+        CompilerIdC.vcxproj -> C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\3.27.0\\CompilerIdC\\CompilerIdC.exe
       PostBuildEvent:
         for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
         :VCEnd
@@ -54,13 +45,13 @@ events:
       FinalizeBuildStatus:
         Deleting file "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
         Touching "Debug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate".
-      Done Building Project "C:\\Gear\\3rdParty\\assimp\\build\\CMakeFiles\\3.27.0\\CompilerIdC\\CompilerIdC.vcxproj" (default targets).
+      Done Building Project "C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\3.27.0\\CompilerIdC\\CompilerIdC.vcxproj" (default targets).
       
       Build succeeded.
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:00.76
+      Time Elapsed 00:00:00.50
       
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -68,7 +59,7 @@ events:
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
       
       The C compiler identification is MSVC, found in:
-        C:/Gear/3rdParty/assimp/build/CMakeFiles/3.27.0/CompilerIdC/CompilerIdC.exe
+        C:/Half Engine/3rdParty/assimp/build/CMakeFiles/3.27.0/CompilerIdC/CompilerIdC.exe
       
   -
     kind: "message-v1"
@@ -80,35 +71,26 @@ events:
     message: |
       Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
       Compiler:  
-      Build flags: /DWIN32;/D_WINDOWS;/GR;/EHsc
+      Build flags: 
       Id flags:  
       
       The output was:
       0
       MSBuild version 17.6.3+07e294721 for .NET Framework
-      Build started 30.12.2023 18:08:41.
+      Build started 07.01.2024 12:48:27.
       
-      Project "C:\\Gear\\3rdParty\\assimp\\build\\CMakeFiles\\3.27.0\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
+      Project "C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\3.27.0\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
       PrepareForBuild:
         Creating directory "Debug\\".
         Creating directory "Debug\\CompilerIdCXX.tlog\\".
       InitializeBuildStatus:
         Creating "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-      VcpkgTripletSelection:
-        Using triplet "x64-windows" from "C:\\Gears\\3rdParty\\vcpkg\\installed\\x64-windows\\"
-        Using normalized configuration "Release"
       ClCompile:
-        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Gears\\3rdParty\\vcpkg\\installed\\x64-windows\\include" /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
         CMakeCXXCompilerId.cpp
       Link:
-        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\\Gears\\3rdParty\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"C:\\Gears\\3rdParty\\vcpkg\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib "C:\\Gears\\3rdParty\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
-        CompilerIdCXX.vcxproj -> C:\\Gear\\3rdParty\\assimp\\build\\CMakeFiles\\3.27.0\\CompilerIdCXX\\CompilerIdCXX.exe
-      AppLocalFromInstalled:
-        pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Gears\\3rdParty\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Gear\\3rdParty\\assimp\\build\\CMakeFiles\\3.27.0\\CompilerIdCXX\\CompilerIdCXX.exe" "C:\\Gears\\3rdParty\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"
-        'pwsh.exe' is not recognized as an internal or external command,
-        operable program or batch file.
-        The command "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Gears\\3rdParty\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Gear\\3rdParty\\assimp\\build\\CMakeFiles\\3.27.0\\CompilerIdCXX\\CompilerIdCXX.exe" "C:\\Gears\\3rdParty\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"" exited with code 9009.
-        "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\Gears\\3rdParty\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Gear\\3rdParty\\assimp\\build\\CMakeFiles\\3.27.0\\CompilerIdCXX\\CompilerIdCXX.exe" "C:\\Gears\\3rdParty\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
+        CompilerIdCXX.vcxproj -> C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\3.27.0\\CompilerIdCXX\\CompilerIdCXX.exe
       PostBuildEvent:
         for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
         :VCEnd
@@ -116,13 +98,13 @@ events:
       FinalizeBuildStatus:
         Deleting file "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
         Touching "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate".
-      Done Building Project "C:\\Gear\\3rdParty\\assimp\\build\\CMakeFiles\\3.27.0\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (default targets).
+      Done Building Project "C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\3.27.0\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (default targets).
       
       Build succeeded.
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:00.63
+      Time Elapsed 00:00:00.38
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -130,7 +112,7 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
       
       The CXX compiler identification is MSVC, found in:
-        C:/Gear/3rdParty/assimp/build/CMakeFiles/3.27.0/CompilerIdCXX/CompilerIdCXX.exe
+        C:/Half Engine/3rdParty/assimp/build/CMakeFiles/3.27.0/CompilerIdCXX/CompilerIdCXX.exe
       
   -
     kind: "try_compile-v1"
@@ -141,8 +123,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Gear/3rdParty/assimp/build/CMakeFiles/CMakeScratch/TryCompile-y2glm6"
-      binary: "C:/Gear/3rdParty/assimp/build/CMakeFiles/CMakeScratch/TryCompile-y2glm6"
+      source: "C:/Half Engine/3rdParty/assimp/build/CMakeFiles/CMakeScratch/TryCompile-y6f8js"
+      binary: "C:/Half Engine/3rdParty/assimp/build/CMakeFiles/CMakeScratch/TryCompile-y6f8js"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
       CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -151,47 +133,38 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Gear/3rdParty/assimp/build/CMakeFiles/CMakeScratch/TryCompile-y2glm6'
+        Change Dir: 'C:/Half Engine/3rdParty/assimp/build/CMakeFiles/CMakeScratch/TryCompile-y6f8js'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_31ad3.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_378a7.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.6.3+07e294721 for .NET Framework
-        Build started 30.12.2023 18:08:42.
+        Build started 07.01.2024 12:48:28.
         
-        Project "C:\\Gear\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-y2glm6\\cmTC_31ad3.vcxproj" on node 1 (default targets).
+        Project "C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-y6f8js\\cmTC_378a7.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_31ad3.dir\\Debug\\".
-          Creating directory "C:\\Gear\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-y2glm6\\Debug\\".
-          Creating directory "cmTC_31ad3.dir\\Debug\\cmTC_31ad3.tlog\\".
+          Creating directory "cmTC_378a7.dir\\Debug\\".
+          Creating directory "C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-y6f8js\\Debug\\".
+          Creating directory "cmTC_378a7.dir\\Debug\\cmTC_378a7.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_31ad3.dir\\Debug\\cmTC_31ad3.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-        VcpkgTripletSelection:
-          Using triplet "x64-windows" from "C:\\Gears\\3rdParty\\vcpkg\\installed\\x64-windows\\"
-          Using normalized configuration "Release"
+          Creating "cmTC_378a7.dir\\Debug\\cmTC_378a7.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Gears\\3rdParty\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_31ad3.dir\\Debug\\\\" /Fd"cmTC_31ad3.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCCompilerABI.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_378a7.dir\\Debug\\\\" /Fd"cmTC_378a7.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCCompilerABI.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.34.31946 for x64
           CMakeCCompilerABI.c
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /I"C:\\Gears\\3rdParty\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_31ad3.dir\\Debug\\\\" /Fd"cmTC_31ad3.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCCompilerABI.c"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_378a7.dir\\Debug\\\\" /Fd"cmTC_378a7.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCCompilerABI.c"
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Gear\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-y2glm6\\Debug\\cmTC_31ad3.exe" /INCREMENTAL /ILK:"cmTC_31ad3.dir\\Debug\\cmTC_31ad3.ilk" /NOLOGO /LIBPATH:"C:\\Gears\\3rdParty\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"C:\\Gears\\3rdParty\\vcpkg\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\Gears\\3rdParty\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Gear/3rdParty/assimp/build/CMakeFiles/CMakeScratch/TryCompile-y2glm6/Debug/cmTC_31ad3.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Gear/3rdParty/assimp/build/CMakeFiles/CMakeScratch/TryCompile-y2glm6/Debug/cmTC_31ad3.lib" /MACHINE:X64  /machine:x64 cmTC_31ad3.dir\\Debug\\CMakeCCompilerABI.obj
-          cmTC_31ad3.vcxproj -> C:\\Gear\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-y2glm6\\Debug\\cmTC_31ad3.exe
-        AppLocalFromInstalled:
-          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Gears\\3rdParty\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Gear\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-y2glm6\\Debug\\cmTC_31ad3.exe" "C:\\Gears\\3rdParty\\vcpkg\\installed\\x64-windows\\bin" "cmTC_31ad3.dir\\Debug\\cmTC_31ad3.tlog\\cmTC_31ad3.write.1u.tlog" "cmTC_31ad3.dir\\Debug\\vcpkg.applocal.log"
-          'pwsh.exe' is not recognized as an internal or external command,
-          operable program or batch file.
-          The command "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Gears\\3rdParty\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Gear\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-y2glm6\\Debug\\cmTC_31ad3.exe" "C:\\Gears\\3rdParty\\vcpkg\\installed\\x64-windows\\bin" "cmTC_31ad3.dir\\Debug\\cmTC_31ad3.tlog\\cmTC_31ad3.write.1u.tlog" "cmTC_31ad3.dir\\Debug\\vcpkg.applocal.log"" exited with code 9009.
-          "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\Gears\\3rdParty\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Gear\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-y2glm6\\Debug\\cmTC_31ad3.exe" "C:\\Gears\\3rdParty\\vcpkg\\installed\\x64-windows\\bin" "cmTC_31ad3.dir\\Debug\\cmTC_31ad3.tlog\\cmTC_31ad3.write.1u.tlog" "cmTC_31ad3.dir\\Debug\\vcpkg.applocal.log"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-y6f8js\\Debug\\cmTC_378a7.exe" /INCREMENTAL /ILK:"cmTC_378a7.dir\\Debug\\cmTC_378a7.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Half Engine/3rdParty/assimp/build/CMakeFiles/CMakeScratch/TryCompile-y6f8js/Debug/cmTC_378a7.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Half Engine/3rdParty/assimp/build/CMakeFiles/CMakeScratch/TryCompile-y6f8js/Debug/cmTC_378a7.lib" /MACHINE:X64  /machine:x64 cmTC_378a7.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_378a7.vcxproj -> C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-y6f8js\\Debug\\cmTC_378a7.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_31ad3.dir\\Debug\\cmTC_31ad3.tlog\\unsuccessfulbuild".
-          Touching "cmTC_31ad3.dir\\Debug\\cmTC_31ad3.tlog\\cmTC_31ad3.lastbuildstate".
-        Done Building Project "C:\\Gear\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-y2glm6\\cmTC_31ad3.vcxproj" (default targets).
+          Deleting file "cmTC_378a7.dir\\Debug\\cmTC_378a7.tlog\\unsuccessfulbuild".
+          Touching "cmTC_378a7.dir\\Debug\\cmTC_378a7.tlog\\cmTC_378a7.lastbuildstate".
+        Done Building Project "C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-y6f8js\\cmTC_378a7.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.62
+        Time Elapsed 00:00:00.36
         
       exitCode: 0
   -
@@ -203,8 +176,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Gear/3rdParty/assimp/build/CMakeFiles/CMakeScratch/TryCompile-dnwlm3"
-      binary: "C:/Gear/3rdParty/assimp/build/CMakeFiles/CMakeScratch/TryCompile-dnwlm3"
+      source: "C:/Half Engine/3rdParty/assimp/build/CMakeFiles/CMakeScratch/TryCompile-6jab6d"
+      binary: "C:/Half Engine/3rdParty/assimp/build/CMakeFiles/CMakeScratch/TryCompile-6jab6d"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -213,47 +186,369 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Gear/3rdParty/assimp/build/CMakeFiles/CMakeScratch/TryCompile-dnwlm3'
+        Change Dir: 'C:/Half Engine/3rdParty/assimp/build/CMakeFiles/CMakeScratch/TryCompile-6jab6d'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_de4b7.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_10d05.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.6.3+07e294721 for .NET Framework
-        Build started 30.12.2023 18:08:43.
+        Build started 07.01.2024 12:48:30.
         
-        Project "C:\\Gear\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dnwlm3\\cmTC_de4b7.vcxproj" on node 1 (default targets).
+        Project "C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6jab6d\\cmTC_10d05.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_de4b7.dir\\Debug\\".
-          Creating directory "C:\\Gear\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dnwlm3\\Debug\\".
-          Creating directory "cmTC_de4b7.dir\\Debug\\cmTC_de4b7.tlog\\".
+          Creating directory "cmTC_10d05.dir\\Debug\\".
+          Creating directory "C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6jab6d\\Debug\\".
+          Creating directory "cmTC_10d05.dir\\Debug\\cmTC_10d05.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_de4b7.dir\\Debug\\cmTC_de4b7.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-        VcpkgTripletSelection:
-          Using triplet "x64-windows" from "C:\\Gears\\3rdParty\\vcpkg\\installed\\x64-windows\\"
-          Using normalized configuration "Release"
+          Creating "cmTC_10d05.dir\\Debug\\cmTC_10d05.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Gears\\3rdParty\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_de4b7.dir\\Debug\\\\" /Fd"cmTC_de4b7.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCXXCompilerABI.cpp"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_10d05.dir\\Debug\\\\" /Fd"cmTC_10d05.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCXXCompilerABI.cpp"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.34.31946 for x64
           CMakeCXXCompilerABI.cpp
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /I"C:\\Gears\\3rdParty\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_de4b7.dir\\Debug\\\\" /Fd"cmTC_de4b7.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_10d05.dir\\Debug\\\\" /Fd"cmTC_10d05.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCXXCompilerABI.cpp"
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Gear\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dnwlm3\\Debug\\cmTC_de4b7.exe" /INCREMENTAL /ILK:"cmTC_de4b7.dir\\Debug\\cmTC_de4b7.ilk" /NOLOGO /LIBPATH:"C:\\Gears\\3rdParty\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"C:\\Gears\\3rdParty\\vcpkg\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\Gears\\3rdParty\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Gear/3rdParty/assimp/build/CMakeFiles/CMakeScratch/TryCompile-dnwlm3/Debug/cmTC_de4b7.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Gear/3rdParty/assimp/build/CMakeFiles/CMakeScratch/TryCompile-dnwlm3/Debug/cmTC_de4b7.lib" /MACHINE:X64  /machine:x64 cmTC_de4b7.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_de4b7.vcxproj -> C:\\Gear\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dnwlm3\\Debug\\cmTC_de4b7.exe
-        AppLocalFromInstalled:
-          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Gears\\3rdParty\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Gear\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dnwlm3\\Debug\\cmTC_de4b7.exe" "C:\\Gears\\3rdParty\\vcpkg\\installed\\x64-windows\\bin" "cmTC_de4b7.dir\\Debug\\cmTC_de4b7.tlog\\cmTC_de4b7.write.1u.tlog" "cmTC_de4b7.dir\\Debug\\vcpkg.applocal.log"
-          'pwsh.exe' is not recognized as an internal or external command,
-          operable program or batch file.
-          The command "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Gears\\3rdParty\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Gear\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dnwlm3\\Debug\\cmTC_de4b7.exe" "C:\\Gears\\3rdParty\\vcpkg\\installed\\x64-windows\\bin" "cmTC_de4b7.dir\\Debug\\cmTC_de4b7.tlog\\cmTC_de4b7.write.1u.tlog" "cmTC_de4b7.dir\\Debug\\vcpkg.applocal.log"" exited with code 9009.
-          "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\Gears\\3rdParty\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Gear\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dnwlm3\\Debug\\cmTC_de4b7.exe" "C:\\Gears\\3rdParty\\vcpkg\\installed\\x64-windows\\bin" "cmTC_de4b7.dir\\Debug\\cmTC_de4b7.tlog\\cmTC_de4b7.write.1u.tlog" "cmTC_de4b7.dir\\Debug\\vcpkg.applocal.log"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6jab6d\\Debug\\cmTC_10d05.exe" /INCREMENTAL /ILK:"cmTC_10d05.dir\\Debug\\cmTC_10d05.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Half Engine/3rdParty/assimp/build/CMakeFiles/CMakeScratch/TryCompile-6jab6d/Debug/cmTC_10d05.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Half Engine/3rdParty/assimp/build/CMakeFiles/CMakeScratch/TryCompile-6jab6d/Debug/cmTC_10d05.lib" /MACHINE:X64  /machine:x64 cmTC_10d05.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_10d05.vcxproj -> C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6jab6d\\Debug\\cmTC_10d05.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_de4b7.dir\\Debug\\cmTC_de4b7.tlog\\unsuccessfulbuild".
-          Touching "cmTC_de4b7.dir\\Debug\\cmTC_de4b7.tlog\\cmTC_de4b7.lastbuildstate".
-        Done Building Project "C:\\Gear\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dnwlm3\\cmTC_de4b7.vcxproj" (default targets).
+          Deleting file "cmTC_10d05.dir\\Debug\\cmTC_10d05.tlog\\unsuccessfulbuild".
+          Touching "cmTC_10d05.dir\\Debug\\cmTC_10d05.tlog\\cmTC_10d05.lastbuildstate".
+        Done Building Project "C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6jab6d\\cmTC_10d05.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.64
+        Time Elapsed 00:00:00.36
         
       exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "contrib/zlib/CMakeLists.txt:35 (check_include_file)"
+    checks:
+      - "Looking for sys/types.h"
+    directories:
+      source: "C:/Half Engine/3rdParty/assimp/build/CMakeFiles/CMakeScratch/TryCompile-mnf2gq"
+      binary: "C:/Half Engine/3rdParty/assimp/build/CMakeFiles/CMakeScratch/TryCompile-mnf2gq"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Half Engine/3rdParty/assimp/cmake-modules"
+    buildResult:
+      variable: "HAVE_SYS_TYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Half Engine/3rdParty/assimp/build/CMakeFiles/CMakeScratch/TryCompile-mnf2gq'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_cce1e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.6.3+07e294721 for .NET Framework
+        Build started 07.01.2024 12:48:31.
+        
+        Project "C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mnf2gq\\cmTC_cce1e.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_cce1e.dir\\Debug\\".
+          Creating directory "C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mnf2gq\\Debug\\".
+          Creating directory "cmTC_cce1e.dir\\Debug\\cmTC_cce1e.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_cce1e.dir\\Debug\\cmTC_cce1e.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_cce1e.dir\\Debug\\\\" /Fd"cmTC_cce1e.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mnf2gq\\CheckIncludeFile.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.34.31946 for x64
+          CheckIncludeFile.c
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_cce1e.dir\\Debug\\\\" /Fd"cmTC_cce1e.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mnf2gq\\CheckIncludeFile.c"
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mnf2gq\\Debug\\cmTC_cce1e.exe" /INCREMENTAL /ILK:"cmTC_cce1e.dir\\Debug\\cmTC_cce1e.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Half Engine/3rdParty/assimp/build/CMakeFiles/CMakeScratch/TryCompile-mnf2gq/Debug/cmTC_cce1e.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Half Engine/3rdParty/assimp/build/CMakeFiles/CMakeScratch/TryCompile-mnf2gq/Debug/cmTC_cce1e.lib" /MACHINE:X64  /machine:x64 cmTC_cce1e.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_cce1e.vcxproj -> C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mnf2gq\\Debug\\cmTC_cce1e.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_cce1e.dir\\Debug\\cmTC_cce1e.tlog\\unsuccessfulbuild".
+          Touching "cmTC_cce1e.dir\\Debug\\cmTC_cce1e.tlog\\cmTC_cce1e.lastbuildstate".
+        Done Building Project "C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mnf2gq\\cmTC_cce1e.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:00.36
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "contrib/zlib/CMakeLists.txt:36 (check_include_file)"
+    checks:
+      - "Looking for stdint.h"
+    directories:
+      source: "C:/Half Engine/3rdParty/assimp/build/CMakeFiles/CMakeScratch/TryCompile-qrrxzf"
+      binary: "C:/Half Engine/3rdParty/assimp/build/CMakeFiles/CMakeScratch/TryCompile-qrrxzf"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Half Engine/3rdParty/assimp/cmake-modules"
+    buildResult:
+      variable: "HAVE_STDINT_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Half Engine/3rdParty/assimp/build/CMakeFiles/CMakeScratch/TryCompile-qrrxzf'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_05dd0.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.6.3+07e294721 for .NET Framework
+        Build started 07.01.2024 12:48:32.
+        
+        Project "C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qrrxzf\\cmTC_05dd0.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_05dd0.dir\\Debug\\".
+          Creating directory "C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qrrxzf\\Debug\\".
+          Creating directory "cmTC_05dd0.dir\\Debug\\cmTC_05dd0.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_05dd0.dir\\Debug\\cmTC_05dd0.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_05dd0.dir\\Debug\\\\" /Fd"cmTC_05dd0.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qrrxzf\\CheckIncludeFile.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.34.31946 for x64
+          CheckIncludeFile.c
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_05dd0.dir\\Debug\\\\" /Fd"cmTC_05dd0.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qrrxzf\\CheckIncludeFile.c"
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qrrxzf\\Debug\\cmTC_05dd0.exe" /INCREMENTAL /ILK:"cmTC_05dd0.dir\\Debug\\cmTC_05dd0.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Half Engine/3rdParty/assimp/build/CMakeFiles/CMakeScratch/TryCompile-qrrxzf/Debug/cmTC_05dd0.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Half Engine/3rdParty/assimp/build/CMakeFiles/CMakeScratch/TryCompile-qrrxzf/Debug/cmTC_05dd0.lib" /MACHINE:X64  /machine:x64 cmTC_05dd0.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_05dd0.vcxproj -> C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qrrxzf\\Debug\\cmTC_05dd0.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_05dd0.dir\\Debug\\cmTC_05dd0.tlog\\unsuccessfulbuild".
+          Touching "cmTC_05dd0.dir\\Debug\\cmTC_05dd0.tlog\\cmTC_05dd0.lastbuildstate".
+        Done Building Project "C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qrrxzf\\cmTC_05dd0.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:00.36
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "contrib/zlib/CMakeLists.txt:37 (check_include_file)"
+    checks:
+      - "Looking for stddef.h"
+    directories:
+      source: "C:/Half Engine/3rdParty/assimp/build/CMakeFiles/CMakeScratch/TryCompile-qx75au"
+      binary: "C:/Half Engine/3rdParty/assimp/build/CMakeFiles/CMakeScratch/TryCompile-qx75au"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Half Engine/3rdParty/assimp/cmake-modules"
+    buildResult:
+      variable: "HAVE_STDDEF_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Half Engine/3rdParty/assimp/build/CMakeFiles/CMakeScratch/TryCompile-qx75au'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_c33c7.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.6.3+07e294721 for .NET Framework
+        Build started 07.01.2024 12:48:32.
+        
+        Project "C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qx75au\\cmTC_c33c7.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_c33c7.dir\\Debug\\".
+          Creating directory "C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qx75au\\Debug\\".
+          Creating directory "cmTC_c33c7.dir\\Debug\\cmTC_c33c7.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_c33c7.dir\\Debug\\cmTC_c33c7.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_c33c7.dir\\Debug\\\\" /Fd"cmTC_c33c7.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qx75au\\CheckIncludeFile.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.34.31946 for x64
+          CheckIncludeFile.c
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_c33c7.dir\\Debug\\\\" /Fd"cmTC_c33c7.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qx75au\\CheckIncludeFile.c"
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qx75au\\Debug\\cmTC_c33c7.exe" /INCREMENTAL /ILK:"cmTC_c33c7.dir\\Debug\\cmTC_c33c7.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Half Engine/3rdParty/assimp/build/CMakeFiles/CMakeScratch/TryCompile-qx75au/Debug/cmTC_c33c7.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Half Engine/3rdParty/assimp/build/CMakeFiles/CMakeScratch/TryCompile-qx75au/Debug/cmTC_c33c7.lib" /MACHINE:X64  /machine:x64 cmTC_c33c7.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_c33c7.vcxproj -> C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qx75au\\Debug\\cmTC_c33c7.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_c33c7.dir\\Debug\\cmTC_c33c7.tlog\\unsuccessfulbuild".
+          Touching "cmTC_c33c7.dir\\Debug\\cmTC_c33c7.tlog\\cmTC_c33c7.lastbuildstate".
+        Done Building Project "C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qx75au\\cmTC_c33c7.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:00.36
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CheckTypeSize.cmake:146 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CheckTypeSize.cmake:271 (__check_type_size_impl)"
+      - "contrib/zlib/CMakeLists.txt:55 (check_type_size)"
+    checks:
+      - "Check size of off64_t"
+    directories:
+      source: "C:/Half Engine/3rdParty/assimp/build/CMakeFiles/CMakeScratch/TryCompile-zp4gc5"
+      binary: "C:/Half Engine/3rdParty/assimp/build/CMakeFiles/CMakeScratch/TryCompile-zp4gc5"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Half Engine/3rdParty/assimp/cmake-modules"
+    buildResult:
+      variable: "HAVE_OFF64_T"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Half Engine/3rdParty/assimp/build/CMakeFiles/CMakeScratch/TryCompile-zp4gc5'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_8d286.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.6.3+07e294721 for .NET Framework
+        Build started 07.01.2024 12:48:33.
+        
+        Project "C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zp4gc5\\cmTC_8d286.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_8d286.dir\\Debug\\".
+          Creating directory "C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zp4gc5\\Debug\\".
+          Creating directory "cmTC_8d286.dir\\Debug\\cmTC_8d286.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_8d286.dir\\Debug\\cmTC_8d286.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _LARGEFILE64_SOURCE=1 /D HAVE_SYS_TYPES_H /D HAVE_STDINT_H /D HAVE_STDDEF_H /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_8d286.dir\\Debug\\\\" /Fd"cmTC_8d286.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zp4gc5\\OFF64_T.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.34.31946 for x64
+          OFF64_T.c
+        C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zp4gc5\\OFF64_T.c(29,12): error C2065: 'off64_t': undeclared identifier [C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zp4gc5\\cmTC_8d286.vcxproj]
+        C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zp4gc5\\OFF64_T.c(30,12): error C2065: 'off64_t': undeclared identifier [C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zp4gc5\\cmTC_8d286.vcxproj]
+        C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zp4gc5\\OFF64_T.c(31,12): error C2065: 'off64_t': undeclared identifier [C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zp4gc5\\cmTC_8d286.vcxproj]
+        C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zp4gc5\\OFF64_T.c(32,12): error C2065: 'off64_t': undeclared identifier [C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zp4gc5\\cmTC_8d286.vcxproj]
+        C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zp4gc5\\OFF64_T.c(33,12): error C2065: 'off64_t': undeclared identifier [C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zp4gc5\\cmTC_8d286.vcxproj]
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _LARGEFILE64_SOURCE=1 /D HAVE_SYS_TYPES_H /D HAVE_STDINT_H /D HAVE_STDDEF_H /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_8d286.dir\\Debug\\\\" /Fd"cmTC_8d286.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zp4gc5\\OFF64_T.c"
+        Done Building Project "C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zp4gc5\\cmTC_8d286.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zp4gc5\\cmTC_8d286.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zp4gc5\\OFF64_T.c(29,12): error C2065: 'off64_t': undeclared identifier [C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zp4gc5\\cmTC_8d286.vcxproj]
+          C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zp4gc5\\OFF64_T.c(30,12): error C2065: 'off64_t': undeclared identifier [C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zp4gc5\\cmTC_8d286.vcxproj]
+          C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zp4gc5\\OFF64_T.c(31,12): error C2065: 'off64_t': undeclared identifier [C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zp4gc5\\cmTC_8d286.vcxproj]
+          C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zp4gc5\\OFF64_T.c(32,12): error C2065: 'off64_t': undeclared identifier [C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zp4gc5\\cmTC_8d286.vcxproj]
+          C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zp4gc5\\OFF64_T.c(33,12): error C2065: 'off64_t': undeclared identifier [C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zp4gc5\\cmTC_8d286.vcxproj]
+        
+            0 Warning(s)
+            5 Error(s)
+        
+        Time Elapsed 00:00:00.23
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "contrib/zlib/CMakeLists.txt:64 (check_function_exists)"
+    checks:
+      - "Looking for fseeko"
+    directories:
+      source: "C:/Half Engine/3rdParty/assimp/build/CMakeFiles/CMakeScratch/TryCompile-3zlr9e"
+      binary: "C:/Half Engine/3rdParty/assimp/build/CMakeFiles/CMakeScratch/TryCompile-3zlr9e"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Half Engine/3rdParty/assimp/cmake-modules"
+    buildResult:
+      variable: "HAVE_FSEEKO"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Half Engine/3rdParty/assimp/build/CMakeFiles/CMakeScratch/TryCompile-3zlr9e'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_b4541.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.6.3+07e294721 for .NET Framework
+        Build started 07.01.2024 12:48:33.
+        
+        Project "C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3zlr9e\\cmTC_b4541.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_b4541.dir\\Debug\\".
+          Creating directory "C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3zlr9e\\Debug\\".
+          Creating directory "cmTC_b4541.dir\\Debug\\cmTC_b4541.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_b4541.dir\\Debug\\cmTC_b4541.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=fseeko /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b4541.dir\\Debug\\\\" /Fd"cmTC_b4541.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3zlr9e\\CheckFunctionExists.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.34.31946 for x64
+          CheckFunctionExists.c
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=fseeko /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b4541.dir\\Debug\\\\" /Fd"cmTC_b4541.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3zlr9e\\CheckFunctionExists.c"
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3zlr9e\\Debug\\cmTC_b4541.exe" /INCREMENTAL /ILK:"cmTC_b4541.dir\\Debug\\cmTC_b4541.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Half Engine/3rdParty/assimp/build/CMakeFiles/CMakeScratch/TryCompile-3zlr9e/Debug/cmTC_b4541.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Half Engine/3rdParty/assimp/build/CMakeFiles/CMakeScratch/TryCompile-3zlr9e/Debug/cmTC_b4541.lib" /MACHINE:X64  /machine:x64 cmTC_b4541.dir\\Debug\\CheckFunctionExists.obj
+        CheckFunctionExists.obj : error LNK2019: unresolved external symbol fseeko referenced in function main [C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3zlr9e\\cmTC_b4541.vcxproj]
+        C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3zlr9e\\Debug\\cmTC_b4541.exe : fatal error LNK1120: 1 unresolved externals [C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3zlr9e\\cmTC_b4541.vcxproj]
+        Done Building Project "C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3zlr9e\\cmTC_b4541.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3zlr9e\\cmTC_b4541.vcxproj" (default target) (1) ->
+        (Link target) -> 
+          CheckFunctionExists.obj : error LNK2019: unresolved external symbol fseeko referenced in function main [C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3zlr9e\\cmTC_b4541.vcxproj]
+          C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3zlr9e\\Debug\\cmTC_b4541.exe : fatal error LNK1120: 1 unresolved externals [C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3zlr9e\\cmTC_b4541.vcxproj]
+        
+            0 Warning(s)
+            2 Error(s)
+        
+        Time Elapsed 00:00:00.33
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "contrib/zlib/CMakeLists.txt:72 (check_include_file)"
+    checks:
+      - "Looking for unistd.h"
+    directories:
+      source: "C:/Half Engine/3rdParty/assimp/build/CMakeFiles/CMakeScratch/TryCompile-it99nh"
+      binary: "C:/Half Engine/3rdParty/assimp/build/CMakeFiles/CMakeScratch/TryCompile-it99nh"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Half Engine/3rdParty/assimp/cmake-modules"
+    buildResult:
+      variable: "Z_HAVE_UNISTD_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Half Engine/3rdParty/assimp/build/CMakeFiles/CMakeScratch/TryCompile-it99nh'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_c8cb9.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.6.3+07e294721 for .NET Framework
+        Build started 07.01.2024 12:48:34.
+        
+        Project "C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-it99nh\\cmTC_c8cb9.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_c8cb9.dir\\Debug\\".
+          Creating directory "C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-it99nh\\Debug\\".
+          Creating directory "cmTC_c8cb9.dir\\Debug\\cmTC_c8cb9.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_c8cb9.dir\\Debug\\cmTC_c8cb9.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_c8cb9.dir\\Debug\\\\" /Fd"cmTC_c8cb9.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-it99nh\\CheckIncludeFile.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.34.31946 for x64
+          CheckIncludeFile.c
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_c8cb9.dir\\Debug\\\\" /Fd"cmTC_c8cb9.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-it99nh\\CheckIncludeFile.c"
+        C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-it99nh\\CheckIncludeFile.c(1,10): fatal  error C1083: Cannot open include file: 'unistd.h': No such file or directory [C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-it99nh\\cmTC_c8cb9.vcxproj]
+        Done Building Project "C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-it99nh\\cmTC_c8cb9.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-it99nh\\cmTC_c8cb9.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-it99nh\\CheckIncludeFile.c(1,10): fatal  error C1083: Cannot open include file: 'unistd.h': No such file or directory [C:\\Half Engine\\3rdParty\\assimp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-it99nh\\cmTC_c8cb9.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.24
+        
+      exitCode: 1
 ...

@@ -36,9 +36,6 @@
     <ClInclude Include="hlMesh.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="stbImage.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="hlModel.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -62,38 +59,32 @@
     <ClCompile Include="hlDefines.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\hlRender\hlRender.cpp">
-      <Filter>Source Files\3rd</Filter>
-    </ClCompile>
-    <ClCompile Include="..\hlRender\hlrDefines.cpp">
-      <Filter>Source Files\3rd</Filter>
-    </ClCompile>
-    <ClCompile Include="..\hlCore\hlLogger.cpp">
-      <Filter>Source Files\3rd</Filter>
-    </ClCompile>
     <ClCompile Include="hlShader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="hlMesh.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="stbImage.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="hlModel.cpp">
       <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Gear\3rdParty\opengl\glad.c">
-      <Filter>Source Files\3rd</Filter>
-    </ClCompile>
-    <ClCompile Include="..\hlResources\hlResources.cpp">
-      <Filter>Source Files\3rd</Filter>
     </ClCompile>
     <ClCompile Include="hlObject.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="hlObjectList.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rdParty\opengl\glad.c">
+      <Filter>Source Files\3rd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hlRender\hlRender.cpp">
+      <Filter>Source Files\3rd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hlRender\hlrDefines.cpp">
+      <Filter>Source Files\3rd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hlResources\stbImage.cpp">
+      <Filter>Source Files\3rd</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

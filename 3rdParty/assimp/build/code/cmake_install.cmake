@@ -1,4 +1,4 @@
-# Install script for directory: C:/Gear/3rdParty/assimp/code
+# Install script for directory: C:/Half Engine/3rdParty/assimp/code
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,136 +34,136 @@ endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "libassimp5.3.0-dev" OR NOT CMAKE_INSTALL_COMPONENT)
   if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "C:/Gear/3rdParty/assimp/build/lib/Debug/assimp-vc143-mtd.lib")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "C:/Half Engine/3rdParty/assimp/build/lib/Debug/assimp-vc143-mtd.lib")
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "C:/Gear/3rdParty/assimp/build/lib/Release/assimp-vc143-mt.lib")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "C:/Half Engine/3rdParty/assimp/build/lib/Release/assimp-vc143-mt.lib")
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "C:/Gear/3rdParty/assimp/build/lib/MinSizeRel/assimp-vc143-mt.lib")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "C:/Half Engine/3rdParty/assimp/build/lib/MinSizeRel/assimp-vc143-mt.lib")
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "C:/Gear/3rdParty/assimp/build/lib/RelWithDebInfo/assimp-vc143-mt.lib")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "C:/Half Engine/3rdParty/assimp/build/lib/RelWithDebInfo/assimp-vc143-mt.lib")
   endif()
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "libassimp5.3.0" OR NOT CMAKE_INSTALL_COMPONENT)
   if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE SHARED_LIBRARY FILES "C:/Gear/3rdParty/assimp/build/bin/Debug/assimp-vc143-mtd.dll")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE SHARED_LIBRARY FILES "C:/Half Engine/3rdParty/assimp/build/bin/Debug/assimp-vc143-mtd.dll")
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE SHARED_LIBRARY FILES "C:/Gear/3rdParty/assimp/build/bin/Release/assimp-vc143-mt.dll")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE SHARED_LIBRARY FILES "C:/Half Engine/3rdParty/assimp/build/bin/Release/assimp-vc143-mt.dll")
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE SHARED_LIBRARY FILES "C:/Gear/3rdParty/assimp/build/bin/MinSizeRel/assimp-vc143-mt.dll")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE SHARED_LIBRARY FILES "C:/Half Engine/3rdParty/assimp/build/bin/MinSizeRel/assimp-vc143-mt.dll")
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE SHARED_LIBRARY FILES "C:/Gear/3rdParty/assimp/build/bin/RelWithDebInfo/assimp-vc143-mt.dll")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE SHARED_LIBRARY FILES "C:/Half Engine/3rdParty/assimp/build/bin/RelWithDebInfo/assimp-vc143-mt.dll")
   endif()
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "assimp-dev" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/assimp" TYPE FILE FILES
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/anim.h"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/aabb.h"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/ai_assert.h"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/camera.h"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/color4.h"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/color4.inl"
-    "C:/Gear/3rdParty/assimp/build/code/../include/assimp/config.h"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/ColladaMetaData.h"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/commonMetaData.h"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/defs.h"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/cfileio.h"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/light.h"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/material.h"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/material.inl"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/matrix3x3.h"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/matrix3x3.inl"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/matrix4x4.h"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/matrix4x4.inl"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/mesh.h"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/ObjMaterial.h"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/pbrmaterial.h"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/GltfMaterial.h"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/postprocess.h"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/quaternion.h"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/quaternion.inl"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/scene.h"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/metadata.h"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/texture.h"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/types.h"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/vector2.h"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/vector2.inl"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/vector3.h"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/vector3.inl"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/version.h"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/cimport.h"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/AssertHandler.h"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/importerdesc.h"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/Importer.hpp"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/DefaultLogger.hpp"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/ProgressHandler.hpp"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/IOStream.hpp"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/IOSystem.hpp"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/Logger.hpp"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/LogStream.hpp"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/NullLogger.hpp"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/cexport.h"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/Exporter.hpp"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/DefaultIOStream.h"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/DefaultIOSystem.h"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/ZipArchiveIOSystem.h"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/SceneCombiner.h"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/fast_atof.h"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/qnan.h"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/BaseImporter.h"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/Hash.h"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/MemoryIOWrapper.h"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/ParsingUtils.h"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/StreamReader.h"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/StreamWriter.h"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/StringComparison.h"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/StringUtils.h"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/SGSpatialSort.h"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/GenericProperty.h"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/SpatialSort.h"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/SkeletonMeshBuilder.h"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/SmallVector.h"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/SmoothingGroups.h"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/SmoothingGroups.inl"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/StandardShapes.h"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/RemoveComments.h"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/Subdivision.h"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/Vertex.h"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/LineSplitter.h"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/TinyFormatter.h"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/Profiler.h"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/LogAux.h"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/Bitmap.h"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/XMLTools.h"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/IOStreamBuffer.h"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/CreateAnimMesh.h"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/XmlParser.h"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/BlobIOSystem.h"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/MathFunctions.h"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/Exceptional.h"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/ByteSwapper.h"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/Base64.hpp"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/anim.h"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/aabb.h"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/ai_assert.h"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/camera.h"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/color4.h"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/color4.inl"
+    "C:/Half Engine/3rdParty/assimp/build/code/../include/assimp/config.h"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/ColladaMetaData.h"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/commonMetaData.h"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/defs.h"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/cfileio.h"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/light.h"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/material.h"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/material.inl"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/matrix3x3.h"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/matrix3x3.inl"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/matrix4x4.h"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/matrix4x4.inl"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/mesh.h"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/ObjMaterial.h"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/pbrmaterial.h"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/GltfMaterial.h"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/postprocess.h"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/quaternion.h"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/quaternion.inl"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/scene.h"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/metadata.h"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/texture.h"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/types.h"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/vector2.h"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/vector2.inl"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/vector3.h"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/vector3.inl"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/version.h"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/cimport.h"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/AssertHandler.h"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/importerdesc.h"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/Importer.hpp"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/DefaultLogger.hpp"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/ProgressHandler.hpp"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/IOStream.hpp"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/IOSystem.hpp"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/Logger.hpp"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/LogStream.hpp"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/NullLogger.hpp"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/cexport.h"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/Exporter.hpp"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/DefaultIOStream.h"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/DefaultIOSystem.h"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/ZipArchiveIOSystem.h"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/SceneCombiner.h"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/fast_atof.h"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/qnan.h"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/BaseImporter.h"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/Hash.h"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/MemoryIOWrapper.h"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/ParsingUtils.h"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/StreamReader.h"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/StreamWriter.h"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/StringComparison.h"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/StringUtils.h"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/SGSpatialSort.h"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/GenericProperty.h"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/SpatialSort.h"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/SkeletonMeshBuilder.h"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/SmallVector.h"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/SmoothingGroups.h"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/SmoothingGroups.inl"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/StandardShapes.h"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/RemoveComments.h"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/Subdivision.h"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/Vertex.h"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/LineSplitter.h"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/TinyFormatter.h"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/Profiler.h"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/LogAux.h"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/Bitmap.h"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/XMLTools.h"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/IOStreamBuffer.h"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/CreateAnimMesh.h"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/XmlParser.h"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/BlobIOSystem.h"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/MathFunctions.h"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/Exceptional.h"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/ByteSwapper.h"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/Base64.hpp"
     )
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "assimp-dev" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/assimp/Compiler" TYPE FILE FILES
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/Compiler/pushpack1.h"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/Compiler/poppack1.h"
-    "C:/Gear/3rdParty/assimp/code/../include/assimp/Compiler/pstdint.h"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/Compiler/pushpack1.h"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/Compiler/poppack1.h"
+    "C:/Half Engine/3rdParty/assimp/code/../include/assimp/Compiler/pstdint.h"
     )
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE FILE FILES "C:/Gear/3rdParty/assimp/build/bin/Debug/assimp-vc143-mtd.pdb")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE FILE FILES "C:/Half Engine/3rdParty/assimp/build/bin/Debug/assimp-vc143-mtd.pdb")
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE FILE FILES "C:/Gear/3rdParty/assimp/build/bin/Release/assimp-vc143-mt.pdb")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE FILE FILES "C:/Half Engine/3rdParty/assimp/build/bin/Release/assimp-vc143-mt.pdb")
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE FILE FILES "C:/Gear/3rdParty/assimp/build/bin/MinSizeRel/assimp-vc143-mt.pdb")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE FILE FILES "C:/Half Engine/3rdParty/assimp/build/bin/MinSizeRel/assimp-vc143-mt.pdb")
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE FILE FILES "C:/Gear/3rdParty/assimp/build/bin/RelWithDebInfo/assimp-vc143-mt.pdb")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE FILE FILES "C:/Half Engine/3rdParty/assimp/build/bin/RelWithDebInfo/assimp-vc143-mt.pdb")
   endif()
 endif()
 

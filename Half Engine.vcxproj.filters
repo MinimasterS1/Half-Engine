@@ -29,40 +29,10 @@
     <ClCompile Include="editor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="hlEngine\hlEngine.cpp">
+    <ClCompile Include="3rdParty\opengl\glad.c">
       <Filter>Source Files\3rd</Filter>
     </ClCompile>
-    <ClCompile Include="hlEngine\hlInput.cpp">
-      <Filter>Source Files\3rd</Filter>
-    </ClCompile>
-    <ClCompile Include="hlRender\hlrDefines.cpp">
-      <Filter>Source Files\3rd</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Gear\3rdParty\opengl\glad.c">
-      <Filter>Source Files\3rd</Filter>
-    </ClCompile>
-    <ClCompile Include="hlRender\hlRender.cpp">
-      <Filter>Source Files\3rd</Filter>
-    </ClCompile>
-    <ClCompile Include="hlEngine\hlBaseCamera.cpp">
-      <Filter>Source Files\3rd</Filter>
-    </ClCompile>
-    <ClCompile Include="hlEngine\hlDefines.cpp">
-      <Filter>Source Files\3rd</Filter>
-    </ClCompile>
-    <ClCompile Include="hlEngine\hlShader.cpp">
-      <Filter>Source Files\3rd</Filter>
-    </ClCompile>
-    <ClCompile Include="hlEngine\hlModel.cpp">
-      <Filter>Source Files\3rd</Filter>
-    </ClCompile>
-    <ClCompile Include="hlEngine\hlMesh.cpp">
-      <Filter>Source Files\3rd</Filter>
-    </ClCompile>
-    <ClCompile Include="hlEngine\stbImage.cpp">
-      <Filter>Source Files\3rd</Filter>
-    </ClCompile>
-    <ClCompile Include="hlResources\hlResources.cpp">
+    <ClCompile Include="hlResources\stbImage.cpp">
       <Filter>Source Files\3rd</Filter>
     </ClCompile>
   </ItemGroup>

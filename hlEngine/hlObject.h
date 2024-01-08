@@ -3,10 +3,9 @@
 #ifndef OBJECT_H
 #define OBJECT_H
 
-
-#include "Common.hpp"
 #include "hlEngine/hlDefines.h"
 #include "hlModel.h"
+#include "hlShader.h"
 #include <glm/glm.hpp>
 #include <fstream>
 #include "iostream"
@@ -14,6 +13,7 @@
 #include <vector>
 
 class ENGINE_API Object {
+
 public:
 
     Object();

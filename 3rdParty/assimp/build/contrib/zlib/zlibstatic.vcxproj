@@ -22,7 +22,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{76119D86-DC00-3C67-B07A-01F69A010C6F}</ProjectGuid>
+    <ProjectGuid>{5528012F-58E7-3AF3-ADA8-61CA2279D5AD}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
@@ -59,26 +59,26 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Gear\3rdParty\assimp\build\contrib\zlib\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Half Engine\3rdParty\assimp\build\contrib\zlib\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">zlibstatic.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">zlibstaticd</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Gear\3rdParty\assimp\build\contrib\zlib\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Half Engine\3rdParty\assimp\build\contrib\zlib\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">zlibstatic.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">zlibstatic</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Gear\3rdParty\assimp\build\contrib\zlib\MinSizeRel\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Half Engine\3rdParty\assimp\build\contrib\zlib\MinSizeRel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">zlibstatic.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">zlibstatic</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Gear\3rdParty\assimp\build\contrib\zlib\RelWithDebInfo\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Half Engine\3rdParty\assimp\build\contrib\zlib\RelWithDebInfo\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">zlibstatic.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">zlibstatic</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Gear\3rdParty\assimp\build\include;C:\Gear\3rdParty\assimp\build;C:\Gear\3rdParty\assimp\include;C:\Gear\3rdParty\assimp\code;C:\Gear\3rdParty\assimp\.;C:\Gear\3rdParty\assimp\contrib\zlib;C:\Gear\3rdParty\assimp\build\contrib\zlib;C:\Gear\3rdParty\assimp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Half Engine\3rdParty\assimp\build\include;C:\Half Engine\3rdParty\assimp\build;C:\Half Engine\3rdParty\assimp\include;C:\Half Engine\3rdParty\assimp\code;C:\Half Engine\3rdParty\assimp\.;C:\Half Engine\3rdParty\assimp\contrib\zlib;C:\Half Engine\3rdParty\assimp\build\contrib\zlib;C:\Half Engine\3rdParty\assimp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -97,10 +97,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;ASSIMP_BUILD_NO_M3D_IMPORTER;ASSIMP_BUILD_NO_M3D_EXPORTER;WIN32_LEAN_AND_MEAN;UNICODE;_UNICODE;NO_FSEEKO;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Gear\3rdParty\assimp\build\include;C:\Gear\3rdParty\assimp\build;C:\Gear\3rdParty\assimp\include;C:\Gear\3rdParty\assimp\code;C:\Gear\3rdParty\assimp\.;C:\Gear\3rdParty\assimp\contrib\zlib;C:\Gear\3rdParty\assimp\build\contrib\zlib;C:\Gear\3rdParty\assimp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Half Engine\3rdParty\assimp\build\include;C:\Half Engine\3rdParty\assimp\build;C:\Half Engine\3rdParty\assimp\include;C:\Half Engine\3rdParty\assimp\code;C:\Half Engine\3rdParty\assimp\.;C:\Half Engine\3rdParty\assimp\contrib\zlib;C:\Half Engine\3rdParty\assimp\build\contrib\zlib;C:\Half Engine\3rdParty\assimp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Gear\3rdParty\assimp\build\include;C:\Gear\3rdParty\assimp\build;C:\Gear\3rdParty\assimp\include;C:\Gear\3rdParty\assimp\code;C:\Gear\3rdParty\assimp\.;C:\Gear\3rdParty\assimp\contrib\zlib;C:\Gear\3rdParty\assimp\build\contrib\zlib;C:\Gear\3rdParty\assimp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Half Engine\3rdParty\assimp\build\include;C:\Half Engine\3rdParty\assimp\build;C:\Half Engine\3rdParty\assimp\include;C:\Half Engine\3rdParty\assimp\code;C:\Half Engine\3rdParty\assimp\.;C:\Half Engine\3rdParty\assimp\contrib\zlib;C:\Half Engine\3rdParty\assimp\build\contrib\zlib;C:\Half Engine\3rdParty\assimp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -113,7 +113,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Gear\3rdParty\assimp\build\include;C:\Gear\3rdParty\assimp\build;C:\Gear\3rdParty\assimp\include;C:\Gear\3rdParty\assimp\code;C:\Gear\3rdParty\assimp\.;C:\Gear\3rdParty\assimp\contrib\zlib;C:\Gear\3rdParty\assimp\build\contrib\zlib;C:\Gear\3rdParty\assimp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Half Engine\3rdParty\assimp\build\include;C:\Half Engine\3rdParty\assimp\build;C:\Half Engine\3rdParty\assimp\include;C:\Half Engine\3rdParty\assimp\code;C:\Half Engine\3rdParty\assimp\.;C:\Half Engine\3rdParty\assimp\contrib\zlib;C:\Half Engine\3rdParty\assimp\build\contrib\zlib;C:\Half Engine\3rdParty\assimp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <DisableSpecificWarnings>4131;4127;4244;4244</DisableSpecificWarnings>
@@ -132,10 +132,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ASSIMP_BUILD_NO_M3D_IMPORTER;ASSIMP_BUILD_NO_M3D_EXPORTER;WIN32_LEAN_AND_MEAN;UNICODE;_UNICODE;NO_FSEEKO;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Gear\3rdParty\assimp\build\include;C:\Gear\3rdParty\assimp\build;C:\Gear\3rdParty\assimp\include;C:\Gear\3rdParty\assimp\code;C:\Gear\3rdParty\assimp\.;C:\Gear\3rdParty\assimp\contrib\zlib;C:\Gear\3rdParty\assimp\build\contrib\zlib;C:\Gear\3rdParty\assimp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Half Engine\3rdParty\assimp\build\include;C:\Half Engine\3rdParty\assimp\build;C:\Half Engine\3rdParty\assimp\include;C:\Half Engine\3rdParty\assimp\code;C:\Half Engine\3rdParty\assimp\.;C:\Half Engine\3rdParty\assimp\contrib\zlib;C:\Half Engine\3rdParty\assimp\build\contrib\zlib;C:\Half Engine\3rdParty\assimp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Gear\3rdParty\assimp\build\include;C:\Gear\3rdParty\assimp\build;C:\Gear\3rdParty\assimp\include;C:\Gear\3rdParty\assimp\code;C:\Gear\3rdParty\assimp\.;C:\Gear\3rdParty\assimp\contrib\zlib;C:\Gear\3rdParty\assimp\build\contrib\zlib;C:\Gear\3rdParty\assimp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Half Engine\3rdParty\assimp\build\include;C:\Half Engine\3rdParty\assimp\build;C:\Half Engine\3rdParty\assimp\include;C:\Half Engine\3rdParty\assimp\code;C:\Half Engine\3rdParty\assimp\.;C:\Half Engine\3rdParty\assimp\contrib\zlib;C:\Half Engine\3rdParty\assimp\build\contrib\zlib;C:\Half Engine\3rdParty\assimp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -148,7 +148,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Gear\3rdParty\assimp\build\include;C:\Gear\3rdParty\assimp\build;C:\Gear\3rdParty\assimp\include;C:\Gear\3rdParty\assimp\code;C:\Gear\3rdParty\assimp\.;C:\Gear\3rdParty\assimp\contrib\zlib;C:\Gear\3rdParty\assimp\build\contrib\zlib;C:\Gear\3rdParty\assimp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Half Engine\3rdParty\assimp\build\include;C:\Half Engine\3rdParty\assimp\build;C:\Half Engine\3rdParty\assimp\include;C:\Half Engine\3rdParty\assimp\code;C:\Half Engine\3rdParty\assimp\.;C:\Half Engine\3rdParty\assimp\contrib\zlib;C:\Half Engine\3rdParty\assimp\build\contrib\zlib;C:\Half Engine\3rdParty\assimp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <DisableSpecificWarnings>4131;4127;4244;4244</DisableSpecificWarnings>
@@ -167,10 +167,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ASSIMP_BUILD_NO_M3D_IMPORTER;ASSIMP_BUILD_NO_M3D_EXPORTER;WIN32_LEAN_AND_MEAN;UNICODE;_UNICODE;NO_FSEEKO;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Gear\3rdParty\assimp\build\include;C:\Gear\3rdParty\assimp\build;C:\Gear\3rdParty\assimp\include;C:\Gear\3rdParty\assimp\code;C:\Gear\3rdParty\assimp\.;C:\Gear\3rdParty\assimp\contrib\zlib;C:\Gear\3rdParty\assimp\build\contrib\zlib;C:\Gear\3rdParty\assimp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Half Engine\3rdParty\assimp\build\include;C:\Half Engine\3rdParty\assimp\build;C:\Half Engine\3rdParty\assimp\include;C:\Half Engine\3rdParty\assimp\code;C:\Half Engine\3rdParty\assimp\.;C:\Half Engine\3rdParty\assimp\contrib\zlib;C:\Half Engine\3rdParty\assimp\build\contrib\zlib;C:\Half Engine\3rdParty\assimp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Gear\3rdParty\assimp\build\include;C:\Gear\3rdParty\assimp\build;C:\Gear\3rdParty\assimp\include;C:\Gear\3rdParty\assimp\code;C:\Gear\3rdParty\assimp\.;C:\Gear\3rdParty\assimp\contrib\zlib;C:\Gear\3rdParty\assimp\build\contrib\zlib;C:\Gear\3rdParty\assimp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Half Engine\3rdParty\assimp\build\include;C:\Half Engine\3rdParty\assimp\build;C:\Half Engine\3rdParty\assimp\include;C:\Half Engine\3rdParty\assimp\code;C:\Half Engine\3rdParty\assimp\.;C:\Half Engine\3rdParty\assimp\contrib\zlib;C:\Half Engine\3rdParty\assimp\build\contrib\zlib;C:\Half Engine\3rdParty\assimp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -183,7 +183,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Gear\3rdParty\assimp\build\include;C:\Gear\3rdParty\assimp\build;C:\Gear\3rdParty\assimp\include;C:\Gear\3rdParty\assimp\code;C:\Gear\3rdParty\assimp\.;C:\Gear\3rdParty\assimp\contrib\zlib;C:\Gear\3rdParty\assimp\build\contrib\zlib;C:\Gear\3rdParty\assimp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Half Engine\3rdParty\assimp\build\include;C:\Half Engine\3rdParty\assimp\build;C:\Half Engine\3rdParty\assimp\include;C:\Half Engine\3rdParty\assimp\code;C:\Half Engine\3rdParty\assimp\.;C:\Half Engine\3rdParty\assimp\contrib\zlib;C:\Half Engine\3rdParty\assimp\build\contrib\zlib;C:\Half Engine\3rdParty\assimp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -201,10 +201,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ASSIMP_BUILD_NO_M3D_IMPORTER;ASSIMP_BUILD_NO_M3D_EXPORTER;WIN32_LEAN_AND_MEAN;UNICODE;_UNICODE;NO_FSEEKO;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Gear\3rdParty\assimp\build\include;C:\Gear\3rdParty\assimp\build;C:\Gear\3rdParty\assimp\include;C:\Gear\3rdParty\assimp\code;C:\Gear\3rdParty\assimp\.;C:\Gear\3rdParty\assimp\contrib\zlib;C:\Gear\3rdParty\assimp\build\contrib\zlib;C:\Gear\3rdParty\assimp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Half Engine\3rdParty\assimp\build\include;C:\Half Engine\3rdParty\assimp\build;C:\Half Engine\3rdParty\assimp\include;C:\Half Engine\3rdParty\assimp\code;C:\Half Engine\3rdParty\assimp\.;C:\Half Engine\3rdParty\assimp\contrib\zlib;C:\Half Engine\3rdParty\assimp\build\contrib\zlib;C:\Half Engine\3rdParty\assimp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Gear\3rdParty\assimp\build\include;C:\Gear\3rdParty\assimp\build;C:\Gear\3rdParty\assimp\include;C:\Gear\3rdParty\assimp\code;C:\Gear\3rdParty\assimp\.;C:\Gear\3rdParty\assimp\contrib\zlib;C:\Gear\3rdParty\assimp\build\contrib\zlib;C:\Gear\3rdParty\assimp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Half Engine\3rdParty\assimp\build\include;C:\Half Engine\3rdParty\assimp\build;C:\Half Engine\3rdParty\assimp\include;C:\Half Engine\3rdParty\assimp\code;C:\Half Engine\3rdParty\assimp\.;C:\Half Engine\3rdParty\assimp\contrib\zlib;C:\Half Engine\3rdParty\assimp\build\contrib\zlib;C:\Half Engine\3rdParty\assimp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -216,11 +216,11 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Gear\3rdParty\assimp\contrib\zlib\CMakeLists.txt">
+    <CustomBuild Include="C:\Half Engine\3rdParty\assimp\contrib\zlib\CMakeLists.txt">
       <UseUtf8Encoding>Always</UseUtf8Encoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Gear/3rdParty/assimp/contrib/zlib/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Half Engine/3rdParty/assimp/contrib/zlib/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Gear/3rdParty/assimp -BC:/Gear/3rdParty/assimp/build --check-stamp-file C:/Gear/3rdParty/assimp/build/contrib/zlib/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Half Engine/3rdParty/assimp" "-BC:/Half Engine/3rdParty/assimp/build" --check-stamp-file "C:/Half Engine/3rdParty/assimp/build/contrib/zlib/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -228,12 +228,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Gear\3rdParty\assimp\contrib\zlib\zconf.h.cmakein;C:\Gear\3rdParty\assimp\contrib\zlib\zlib.pc.cmakein;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Internal\CheckSourceCompiles.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Gear\3rdParty\assimp\build\contrib\zlib\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Half Engine\3rdParty\assimp\contrib\zlib\zconf.h.cmakein;C:\Half Engine\3rdParty\assimp\contrib\zlib\zlib.pc.cmakein;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Internal\CheckSourceCompiles.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Half Engine\3rdParty\assimp\build\contrib\zlib\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Gear/3rdParty/assimp/contrib/zlib/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Half Engine/3rdParty/assimp/contrib/zlib/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Gear/3rdParty/assimp -BC:/Gear/3rdParty/assimp/build --check-stamp-file C:/Gear/3rdParty/assimp/build/contrib/zlib/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Half Engine/3rdParty/assimp" "-BC:/Half Engine/3rdParty/assimp/build" --check-stamp-file "C:/Half Engine/3rdParty/assimp/build/contrib/zlib/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -241,12 +241,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Gear\3rdParty\assimp\contrib\zlib\zconf.h.cmakein;C:\Gear\3rdParty\assimp\contrib\zlib\zlib.pc.cmakein;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Internal\CheckSourceCompiles.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Gear\3rdParty\assimp\build\contrib\zlib\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Half Engine\3rdParty\assimp\contrib\zlib\zconf.h.cmakein;C:\Half Engine\3rdParty\assimp\contrib\zlib\zlib.pc.cmakein;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Internal\CheckSourceCompiles.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Half Engine\3rdParty\assimp\build\contrib\zlib\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Gear/3rdParty/assimp/contrib/zlib/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Half Engine/3rdParty/assimp/contrib/zlib/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Gear/3rdParty/assimp -BC:/Gear/3rdParty/assimp/build --check-stamp-file C:/Gear/3rdParty/assimp/build/contrib/zlib/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Half Engine/3rdParty/assimp" "-BC:/Half Engine/3rdParty/assimp/build" --check-stamp-file "C:/Half Engine/3rdParty/assimp/build/contrib/zlib/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -254,12 +254,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Gear\3rdParty\assimp\contrib\zlib\zconf.h.cmakein;C:\Gear\3rdParty\assimp\contrib\zlib\zlib.pc.cmakein;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Internal\CheckSourceCompiles.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Gear\3rdParty\assimp\build\contrib\zlib\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Half Engine\3rdParty\assimp\contrib\zlib\zconf.h.cmakein;C:\Half Engine\3rdParty\assimp\contrib\zlib\zlib.pc.cmakein;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Internal\CheckSourceCompiles.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Half Engine\3rdParty\assimp\build\contrib\zlib\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Gear/3rdParty/assimp/contrib/zlib/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Half Engine/3rdParty/assimp/contrib/zlib/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Gear/3rdParty/assimp -BC:/Gear/3rdParty/assimp/build --check-stamp-file C:/Gear/3rdParty/assimp/build/contrib/zlib/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Half Engine/3rdParty/assimp" "-BC:/Half Engine/3rdParty/assimp/build" --check-stamp-file "C:/Half Engine/3rdParty/assimp/build/contrib/zlib/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -267,42 +267,42 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Gear\3rdParty\assimp\contrib\zlib\zconf.h.cmakein;C:\Gear\3rdParty\assimp\contrib\zlib\zlib.pc.cmakein;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Internal\CheckSourceCompiles.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Gear\3rdParty\assimp\build\contrib\zlib\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Half Engine\3rdParty\assimp\contrib\zlib\zconf.h.cmakein;C:\Half Engine\3rdParty\assimp\contrib\zlib\zlib.pc.cmakein;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Internal\CheckSourceCompiles.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Half Engine\3rdParty\assimp\build\contrib\zlib\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Gear\3rdParty\assimp\contrib\zlib\adler32.c" />
-    <ClCompile Include="C:\Gear\3rdParty\assimp\contrib\zlib\compress.c" />
-    <ClCompile Include="C:\Gear\3rdParty\assimp\contrib\zlib\crc32.c" />
-    <ClCompile Include="C:\Gear\3rdParty\assimp\contrib\zlib\deflate.c" />
-    <ClCompile Include="C:\Gear\3rdParty\assimp\contrib\zlib\gzclose.c" />
-    <ClCompile Include="C:\Gear\3rdParty\assimp\contrib\zlib\gzlib.c" />
-    <ClCompile Include="C:\Gear\3rdParty\assimp\contrib\zlib\gzread.c" />
-    <ClCompile Include="C:\Gear\3rdParty\assimp\contrib\zlib\gzwrite.c" />
-    <ClCompile Include="C:\Gear\3rdParty\assimp\contrib\zlib\inflate.c" />
-    <ClCompile Include="C:\Gear\3rdParty\assimp\contrib\zlib\infback.c" />
-    <ClCompile Include="C:\Gear\3rdParty\assimp\contrib\zlib\inftrees.c" />
-    <ClCompile Include="C:\Gear\3rdParty\assimp\contrib\zlib\inffast.c" />
-    <ClCompile Include="C:\Gear\3rdParty\assimp\contrib\zlib\trees.c" />
-    <ClCompile Include="C:\Gear\3rdParty\assimp\contrib\zlib\uncompr.c" />
-    <ClCompile Include="C:\Gear\3rdParty\assimp\contrib\zlib\zutil.c" />
-    <ClInclude Include="C:\Gear\3rdParty\assimp\build\contrib\zlib\zconf.h" />
-    <ClInclude Include="C:\Gear\3rdParty\assimp\contrib\zlib\zlib.h" />
-    <ClInclude Include="C:\Gear\3rdParty\assimp\contrib\zlib\crc32.h" />
-    <ClInclude Include="C:\Gear\3rdParty\assimp\contrib\zlib\deflate.h" />
-    <ClInclude Include="C:\Gear\3rdParty\assimp\contrib\zlib\gzguts.h" />
-    <ClInclude Include="C:\Gear\3rdParty\assimp\contrib\zlib\inffast.h" />
-    <ClInclude Include="C:\Gear\3rdParty\assimp\contrib\zlib\inffixed.h" />
-    <ClInclude Include="C:\Gear\3rdParty\assimp\contrib\zlib\inflate.h" />
-    <ClInclude Include="C:\Gear\3rdParty\assimp\contrib\zlib\inftrees.h" />
-    <ClInclude Include="C:\Gear\3rdParty\assimp\contrib\zlib\trees.h" />
-    <ClInclude Include="C:\Gear\3rdParty\assimp\contrib\zlib\zutil.h" />
+    <ClCompile Include="C:\Half Engine\3rdParty\assimp\contrib\zlib\adler32.c" />
+    <ClCompile Include="C:\Half Engine\3rdParty\assimp\contrib\zlib\compress.c" />
+    <ClCompile Include="C:\Half Engine\3rdParty\assimp\contrib\zlib\crc32.c" />
+    <ClCompile Include="C:\Half Engine\3rdParty\assimp\contrib\zlib\deflate.c" />
+    <ClCompile Include="C:\Half Engine\3rdParty\assimp\contrib\zlib\gzclose.c" />
+    <ClCompile Include="C:\Half Engine\3rdParty\assimp\contrib\zlib\gzlib.c" />
+    <ClCompile Include="C:\Half Engine\3rdParty\assimp\contrib\zlib\gzread.c" />
+    <ClCompile Include="C:\Half Engine\3rdParty\assimp\contrib\zlib\gzwrite.c" />
+    <ClCompile Include="C:\Half Engine\3rdParty\assimp\contrib\zlib\inflate.c" />
+    <ClCompile Include="C:\Half Engine\3rdParty\assimp\contrib\zlib\infback.c" />
+    <ClCompile Include="C:\Half Engine\3rdParty\assimp\contrib\zlib\inftrees.c" />
+    <ClCompile Include="C:\Half Engine\3rdParty\assimp\contrib\zlib\inffast.c" />
+    <ClCompile Include="C:\Half Engine\3rdParty\assimp\contrib\zlib\trees.c" />
+    <ClCompile Include="C:\Half Engine\3rdParty\assimp\contrib\zlib\uncompr.c" />
+    <ClCompile Include="C:\Half Engine\3rdParty\assimp\contrib\zlib\zutil.c" />
+    <ClInclude Include="C:\Half Engine\3rdParty\assimp\build\contrib\zlib\zconf.h" />
+    <ClInclude Include="C:\Half Engine\3rdParty\assimp\contrib\zlib\zlib.h" />
+    <ClInclude Include="C:\Half Engine\3rdParty\assimp\contrib\zlib\crc32.h" />
+    <ClInclude Include="C:\Half Engine\3rdParty\assimp\contrib\zlib\deflate.h" />
+    <ClInclude Include="C:\Half Engine\3rdParty\assimp\contrib\zlib\gzguts.h" />
+    <ClInclude Include="C:\Half Engine\3rdParty\assimp\contrib\zlib\inffast.h" />
+    <ClInclude Include="C:\Half Engine\3rdParty\assimp\contrib\zlib\inffixed.h" />
+    <ClInclude Include="C:\Half Engine\3rdParty\assimp\contrib\zlib\inflate.h" />
+    <ClInclude Include="C:\Half Engine\3rdParty\assimp\contrib\zlib\inftrees.h" />
+    <ClInclude Include="C:\Half Engine\3rdParty\assimp\contrib\zlib\trees.h" />
+    <ClInclude Include="C:\Half Engine\3rdParty\assimp\contrib\zlib\zutil.h" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\Gear\3rdParty\assimp\build\ZERO_CHECK.vcxproj">
-      <Project>{84F2860D-8307-3E51-A3CE-81D5EA71F634}</Project>
+    <ProjectReference Include="C:\Half Engine\3rdParty\assimp\build\ZERO_CHECK.vcxproj">
+      <Project>{385AA10A-B6F8-300F-AC2C-7596AE281B91}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>

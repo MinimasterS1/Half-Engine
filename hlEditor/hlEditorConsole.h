@@ -6,17 +6,19 @@
 
 #include "hlEditor.h"
 
-class ENGINE_API Console : public Editor
+class EDITOR_API EditorConsole : public Editor
 
 {
 
 public:
 
-	Console();
+	EditorConsole();
 
-	~Console();
+	~EditorConsole();
 
 	void DrawConsole();
 
 };
+
+
 #endif

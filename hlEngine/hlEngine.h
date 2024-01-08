@@ -4,10 +4,9 @@
 #define ENGINE_H
 
 #include "Common.hpp"
+#include "hlDefines.h"
 #include "hlInput.h"
 #include "hlRender/hlRender.h"
-
-#include <future>
 
 
 class ENGINE_API Engine
@@ -27,6 +26,7 @@ public:
     void ShutDownApplication();
 
     void AsyncLoadLevel();
+
 
     Render gRenderManager;
    

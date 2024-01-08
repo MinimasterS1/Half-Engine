@@ -35,31 +35,10 @@
     <ClCompile Include="hlrDefines.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\hlEngine\hlInput.cpp">
-      <Filter>Source Files\3rd</Filter>
-    </ClCompile>
     <ClCompile Include="..\3rdParty\opengl\glad.c">
       <Filter>Source Files\3rd</Filter>
     </ClCompile>
-    <ClCompile Include="..\hlCore\hlLogger.cpp">
-      <Filter>Source Files\3rd</Filter>
-    </ClCompile>
-    <ClCompile Include="..\hlEngine\hlBaseCamera.cpp">
-      <Filter>Source Files\3rd</Filter>
-    </ClCompile>
-    <ClCompile Include="..\hlEngine\hlDefines.cpp">
-      <Filter>Source Files\3rd</Filter>
-    </ClCompile>
-    <ClCompile Include="..\hlEngine\hlMesh.cpp">
-      <Filter>Source Files\3rd</Filter>
-    </ClCompile>
-    <ClCompile Include="..\hlEngine\hlModel.cpp">
-      <Filter>Source Files\3rd</Filter>
-    </ClCompile>
-    <ClCompile Include="..\hlEngine\hlShader.cpp">
-      <Filter>Source Files\3rd</Filter>
-    </ClCompile>
-    <ClCompile Include="..\hlEngine\stbImage.cpp">
+    <ClCompile Include="..\hlResources\stbImage.cpp">
       <Filter>Source Files\3rd</Filter>
     </ClCompile>
   </ItemGroup>

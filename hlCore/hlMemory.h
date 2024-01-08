@@ -4,6 +4,9 @@
 #define MEMORYPOOL_H
 
 #include "Common.hpp"
+
+#include "hlLogger.h"
+
 #include <map>
 #include <vector>
 #include <numeric>
@@ -28,6 +31,9 @@ public:
 
 
 private:
+
+
+    Logger MemoryLog;
 
     size_t align(size_t size, size_t alignment);
     void allocateBlock(size_t size);

@@ -1,4 +1,4 @@
-# Install script for directory: C:/Gear/3rdParty/assimp/test/headercheck
+# Install script for directory: C:/Half Engine/3rdParty/assimp/test/headercheck
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

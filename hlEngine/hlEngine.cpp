@@ -33,9 +33,9 @@ void Engine::RunApplication()
 void Engine::MainLoop()
 {
 
-    while (!gRenderManager.ShouldClose()) {
+   while (!gRenderManager.ShouldClose()) {
 
-       Update();
+      Update();
 
        RenderProcess();
   }
@@ -56,11 +56,14 @@ void Engine::RenderProcess()
 void Engine::ShutDownApplication()
 {
     gRenderManager.shutDown();
-    delete gInputManager;
+   delete gInputManager;
     gInputManager = nullptr;
 }
 
 void Engine::AsyncLoadLevel()
 {
+
 }
+
+
 

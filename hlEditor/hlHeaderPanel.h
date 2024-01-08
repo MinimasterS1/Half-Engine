@@ -46,6 +46,7 @@ public:
 
 private:
 
+
 	bool ShowLoadFileDialog = false;
 	bool ShowSaveFileDialog = false;
 

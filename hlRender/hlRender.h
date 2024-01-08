@@ -9,11 +9,13 @@
 #include "hlEngine/hlDefines.h"
 #include "hlrDefines.h"
 #include <glad/glad.h>
-#include <GLFW/glfw3.h>
+#include <glfw/glfw3.h>
 
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
+
+#include "hlEditor/hlEditor.h"
 
 #include <fstream>
 #include <iostream>
@@ -31,7 +33,7 @@ class RENDER_API Render
 {
 public:
 
-    Render();
+    Render(); 
 
     ~Render();
 
@@ -69,6 +71,9 @@ public:
     bool IsDrawLogo = false;
 
     Input* input;
+
+   std::unique_ptr<Editor> EditorUI;
+
 private:
 
     float FPS;

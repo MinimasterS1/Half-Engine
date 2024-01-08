@@ -1,7 +1,6 @@
 #include "hlMemory.h"
-#include "hlLogger.h"
 
-Logger MemoryLog;
+
 
 MemoryPool::MemoryPool()
 {

@@ -1,15 +1,30 @@
 #pragma once
 
+#include "hlCore/hlLogger.h"
+
+
+#ifdef  EDITOR_API_API_EXPORTS
+#define EDITOR_API __declspec(dllexport)
+#else
+#define EDITOR_API __declspec(dllimport)
+
+#endif
+
+
 #ifndef EDITOR_H
 #define EDITOR_H
 
+
+
 #include "Common.hpp"
-#include "hlCore/hlLogger.h"
+
 #include "hlRender/hlrDefines.h"
 
 #include "imgui.h"
 #include "imgui_impl_glfw.h"
 #include "imgui_impl_opengl3.h"
+
+
 
 #include <functional>
 #include <filesystem>

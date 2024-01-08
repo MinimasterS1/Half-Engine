@@ -27,21 +27,27 @@
   <ItemGroup>
     <ClCompile Include="..\3rdParty\ImGuiFileDialog\ImGuiFileDialog.cpp" />
     <ClCompile Include="..\3rdParty\imgui\backends\imgui_impl_glfw.cpp" />
-    <ClCompile Include="..\3rdParty\imgui\backends\imgui_impl_opengl2.cpp" />
     <ClCompile Include="..\3rdParty\imgui\backends\imgui_impl_opengl3.cpp" />
     <ClCompile Include="..\3rdParty\imgui\imgui.cpp" />
     <ClCompile Include="..\3rdParty\imgui\imgui_demo.cpp" />
+    <ClCompile Include="..\3rdParty\imgui\imgui_draw.cpp" />
     <ClCompile Include="..\3rdParty\imgui\imgui_tables.cpp" />
     <ClCompile Include="..\3rdParty\imgui\imgui_widgets.cpp" />
     <ClCompile Include="..\3rdParty\imgui\misc\cpp\imgui_stdlib.cpp" />
-    <ClCompile Include="..\hlEngine\hlEngine.cpp" />
-    <ClCompile Include="..\hlEngine\hlModel.cpp" />
-    <ClCompile Include="..\hlEngine\hlObject.cpp" />
+    <ClCompile Include="..\hlEngine\hlObjectList.cpp" />
     <ClCompile Include="..\hlRender\hlrDefines.cpp" />
     <ClCompile Include="hlBrowser.cpp" />
     <ClCompile Include="hlEditor.cpp" />
     <ClCompile Include="hlEditorConsole.cpp" />
     <ClCompile Include="hlHeaderPanel.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\hlCore\hlCore.vcxproj">
+      <Project>{cdce0fe5-38e1-4021-8654-f1faeb600dfd}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\hlEngine\hlEngine.vcxproj">
+      <Project>{a96702e7-8229-4459-b0fd-661a5a0c338d}</Project>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
@@ -95,6 +101,14 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64)</LibraryPath>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -133,20 +147,21 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;HLEDITOR_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>EDITOR_API_API_EXPORTS</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>
       </PrecompiledHeaderFile>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>C:\Half Engine\3rdParty\ImGuiFileDialog;C:\Half Engine\3rdParty\imgui;C:\Half Engine\3rdParty\assimp\include;C:\Half Engine\3rdParty\opengl\include;C:\Half Engine\3rdParty\assimp\build\include;C:\Half Engine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Half Engine\hlResources\x64\Debug;C:\Half Engine\hlCore\x64\Debug;C:\Half Engine\hlEngine\x64\Debug;C:\Half Engine\3rdParty\ImGuiFileDialog;C:\Half Engine\3rdParty\imgui;C:\Half Engine;C:\Half Engine\3rdParty\opengl\include;C:\Half Engine\3rdParty\assimp\build\include;C:\Half Engine\3rdParty\assimp\include;C:\Half Engine\3rdParty</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
-      <AdditionalLibraryDirectories>C:\Half Engine\3rdParty\ImGuiFileDialog;C:\Half Engine\3rdParty\imgui;C:\Half Engine\3rdParty\opengl\lib;C:\Half Engine\3rdParty\assimp\build\lib\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>gdi32.lib;opengl32.lib;glu32.lib;glfw3.lib;assimp-vc143-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Half Engine\hlEngine\x64\Debug;C:\Half Engine\3rdParty\ImGuiFileDialog;C:\Half Engine\3rdParty\imgui;C:\Half Engine;C:\Half Engine\3rdParty\opengl\lib;C:\Half Engine\3rdParty\assimp\build\lib\Release;C:\Half Engine\3rdParty\assimp\include;C:\Half Engine\3rdParty</AdditionalLibraryDirectories>
+      <AdditionalDependencies>shell32.lib;gdi32.lib;user32.lib;opengl32.lib;glu32.lib;glfw3.lib;assimp-vc143-mt.lib</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
       <Command>copy "C:\Half Engine\hlEditor\x64\Debug\hlEditor.dll" "C:\Half Engine\Engine\bin"
@@ -159,13 +174,14 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>NDEBUG;HLEDITOR_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>EDITOR_API_API_EXPORTS</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>
       </PrecompiledHeaderFile>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>C:\Half Engine\3rdParty\ImGuiFileDialog;C:\Half Engine\3rdParty\imgui;C:\Half Engine\3rdParty\assimp\include;C:\Half Engine\3rdParty\opengl\include;C:\Half Engine\3rdParty\assimp\build\include;C:\Half Engine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Half Engine\hlResources\x64\Debug;C:\Half Engine\hlCore\x64\Debug;C:\Half Engine\hlEngine\x64\Debug;C:\Half Engine\3rdParty\ImGuiFileDialog;C:\Half Engine\3rdParty\imgui;C:\Half Engine;C:\Half Engine\3rdParty\opengl\include;C:\Half Engine\3rdParty\assimp\build\include;C:\Half Engine\3rdParty\assimp\include;C:\Half Engine\3rdParty</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -173,8 +189,8 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
-      <AdditionalLibraryDirectories>C:\Half Engine\3rdParty\ImGuiFileDialog;C:\Half Engine\3rdParty\imgui;C:\Half Engine\3rdParty\opengl\lib;C:\Half Engine\3rdParty\assimp\build\lib\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>gdi32.lib;opengl32.lib;glu32.lib;glfw3.lib;assimp-vc143-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Half Engine\hlEngine\x64\Debug;C:\Half Engine\3rdParty\ImGuiFileDialog;C:\Half Engine\3rdParty\imgui;C:\Half Engine;C:\Half Engine\3rdParty\opengl\lib;C:\Half Engine\3rdParty\assimp\build\lib\Release;C:\Half Engine\3rdParty\assimp\include;C:\Half Engine\3rdParty</AdditionalLibraryDirectories>
+      <AdditionalDependencies>shell32.lib;gdi32.lib;user32.lib;opengl32.lib;glu32.lib;glfw3.lib;assimp-vc143-mt.lib</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
       <Command>copy "C:\Half Engine\hlEditor\x64\Release\hlEditor.dll" "C:\Half Engine\Engine\bin"

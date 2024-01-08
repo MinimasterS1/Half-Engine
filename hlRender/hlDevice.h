@@ -3,7 +3,7 @@
 #include "Common.hpp"
 
 #include <glad/glad.h>
-#include <GLFW/glfw3.h>
+#include <glfw/glfw3.h>
 
 
 RENDER_API void MonitorScale(int* width, int* height);

@@ -9,3 +9,4 @@ Logger::~Logger()
 {
 
 }
+

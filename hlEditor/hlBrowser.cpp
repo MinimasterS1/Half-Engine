@@ -1,11 +1,14 @@
 ﻿#include "hlBrowser.h"
 
+#include "imgui.h"
 #include "ImGuiFileDialog.h"
+
 #include <glm/gtc/type_ptr.hpp>
-#include "hlEngine/hlEngine.h"
-#include "hlEngine/hlObject.h"
+
+#include "hlEngine/hlModel.h"
+
 #include <functional>
-#include "ImGuiFileDialog.h"
+
 #include <fstream>
 #include <string>
 
@@ -18,6 +21,7 @@ ObjectList& objectList = ObjectList::getInstance();
 Engine& enginelight = Engine::GetInstance();
 
 float DragStep = 0.003f;
+
 
 ContentBrowser::ContentBrowser()
 {
@@ -74,16 +78,16 @@ void ContentBrowser::DrawBrowser()
                                     // LOG.Log(Logger::LogLevel::Error, "File does not exist: " + outputPath);
                                 }
                                 else {
-                                    // modelInstance.DeserializeModel(outputPath, texturePath);
+                                     modelInstance.DeserializeModel(outputPath, texturePath);
                                    //  LOG.Log(Logger::LogLevel::Info, "Model deserialization successful.");
                                 }
                             }
                             else {
-                                engineLog.Log(Logger::LogLevel::Info, "Attempting to load model from: " + relativePath);
+                                editorLog.Log(Logger::LogLevel::Info, "Attempting to load model from: " + relativePath);
 
                                 // Проверка существования файла
                                 if (!std::filesystem::exists(relativePath)) {
-                                    engineLog.Log(Logger::LogLevel::Error, "File does not exist: " + relativePath);
+                                    editorLog.Log(Logger::LogLevel::Error, "File does not exist: " + relativePath);
                                 }
                                 else {
                                     modelInstance.loadModel(relativePath);
@@ -93,15 +97,15 @@ void ContentBrowser::DrawBrowser()
                                     texturePath = "../Gear/x64/Debug/gamedata/Textures/Props";
                                     outputPath = "C:/Gear/x64/Debug/bin/" + fileSerializeName.substr(0, fileSerializeName.find_last_of(".")) + ".modelbin";
 
-                                    engineLog.Log(Logger::LogLevel::Info, "Output Path for serialization: " + outputPath);
+                                    editorLog.Log(Logger::LogLevel::Info, "Output Path for serialization: " + outputPath);
 
                                     // Проверка существования файла перед сериализацией
                                     if (!std::filesystem::exists(outputPath)) {
-                                        engineLog.Log(Logger::LogLevel::Error, "Output file does not exist: " + outputPath);
+                                        editorLog.Log(Logger::LogLevel::Error, "Output file does not exist: " + outputPath);
                                     }
                                     else {
-                                       // modelInstance.SerializeModel(outputPath);
-                                        engineLog.Log(Logger::LogLevel::Info, "Model serialization successful.");
+                                        modelInstance.SerializeModel(outputPath);
+                                        editorLog.Log(Logger::LogLevel::Info, "Model serialization successful.");
                                     }
                                 }
                             }
@@ -109,7 +113,7 @@ void ContentBrowser::DrawBrowser()
                             objectList.loadedModels.push_back(modelInstance);
                         }
                         catch (const std::exception& e) {
-                            engineLog.Log(Logger::LogLevel::Error, "Error loading or deserializing model: " + std::string(e.what()));
+                            editorLog.Log(Logger::LogLevel::Error, "Error loading or deserializing model: " + std::string(e.what()));
                         }
 
                         ImGuiFileDialog::Instance()->Close();
@@ -209,7 +213,7 @@ void ContentBrowser::LoadOnScene(const std::vector<fs::path>& filePaths,
 
                 Model modelInstance;
 
-               // modelInstance.DeserializeModel(relativePath, texturePath);
+                modelInstance.DeserializeModel(relativePath, texturePath);
 
                Object newSceneObject(modelInstance);
 
@@ -242,7 +246,7 @@ void ContentBrowser::SelectedFile(const fs::path& filePath)
             Model modelInstance;
             std::string texturePath = "../Gear/x64/Debug/gamedata/Textures/Props";
 
-           // modelInstance.DeserializeModel(relativePath, texturePath);
+            modelInstance.DeserializeModel(relativePath, texturePath);
             //  std::cout << "Model Load from: " << relativePath << std::endl;
             Object newSceneObject(modelInstance);
             newSceneObject.setObjectName(filePath.stem().string());

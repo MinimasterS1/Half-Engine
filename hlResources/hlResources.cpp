@@ -5,12 +5,13 @@
 
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
-#include "hlEngine/stbImage.h"
+
 
 #include "assimp/Importer.hpp"
 #include <assimp/scene.h>
 #include <assimp/postprocess.h>
 
+#include "stbImage.h"
 #include <string>
 #include <fstream>
 #include <sstream>
@@ -35,13 +36,15 @@ ResourceLoader::~ResourceLoader() {
 
 unsigned int ResourceLoader::LoadTexture(const char* path, const std::string& directory)
 {
-    std::string filename = std::string(path);  
-    filename = directory + '/' + filename;
-    std::cout << "Texture at path Load model : " << directory << std::endl;
+    std::string filename = directory + '/' + path;
+    std::cout << "Texture at path Load model: " << filename << std::endl;
+
     unsigned int textureID;
     glGenTextures(1, &textureID);
+
     int width, height, nrComponents;
     unsigned char* data = stbi_load(filename.c_str(), &width, &height, &nrComponents, 0);
+
     if (data)
     {
         GLenum format;
@@ -51,6 +54,12 @@ unsigned int ResourceLoader::LoadTexture(const char* path, const std::string& di
             format = GL_RGB;
         else if (nrComponents == 4)
             format = GL_RGBA;
+        else
+        {
+            std::cerr << "Error: Unknown number of components in texture: " << nrComponents << std::endl;
+            stbi_image_free(data);
+            return 0;
+        }
 
         glBindTexture(GL_TEXTURE_2D, textureID);
 
@@ -60,19 +69,18 @@ unsigned int ResourceLoader::LoadTexture(const char* path, const std::string& di
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
-
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 
         stbi_image_free(data);
     }
     else
     {
-        // std::cout << "Texture failed to load at path: " << path << std::endl;
-        stbi_image_free(data);
+        std::cerr << "Error: Failed to load texture at path: " << filename << std::endl;
         return 0;
     }
 
     return textureID;
 }
+
 
 

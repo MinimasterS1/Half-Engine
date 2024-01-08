@@ -250,7 +250,7 @@ void HeaderPanel::DrawHeaderPanel()
             if (ImGui::DragFloat("##CameraSpeed", &tempCameraSpeed)) {
 
                 camera.SetSpeed(tempCameraSpeed);
-                // camera.updateCameraVectors();
+                 
 
 
             }

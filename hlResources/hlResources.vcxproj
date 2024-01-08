@@ -20,11 +20,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="hlResources.h" />
+    <ClInclude Include="stbImage.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\3rdParty\opengl\glad.c" />
-    <ClCompile Include="..\hlEngine\stbImage.cpp" />
     <ClCompile Include="hlResources.cpp" />
+    <ClCompile Include="stbImage.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
@@ -122,14 +123,14 @@
       <PrecompiledHeaderFile>
       </PrecompiledHeaderFile>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>C:\Half Engine\3rdParty\assimp\include;C:\Half Engine\3rdParty\opengl\include;C:\Half Engine\3rdParty\assimp\build\include;C:\Half Engine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Half Engine\3rdParty\opengl\include;C:\Half Engine\3rdParty\assimp\build\include;C:\Half Engine\3rdParty\assimp\include;C:\Half Engine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
-      <AdditionalLibraryDirectories>C:\Half Engine\3rdParty\opengl\lib;C:\Half Engine\3rdParty\assimp\build\lib\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>gdi32.lib;opengl32.lib;glu32.lib;glfw3.lib;assimp-vc143-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Half Engine\3rdParty\opengl\lib;C:\Half Engine\3rdParty\assimp\build\lib\Release;C:\Half Engine\3rdParty\assimp;C:\Half Engine</AdditionalLibraryDirectories>
+      <AdditionalDependencies>assimp-vc143-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
       <Command>copy "C:\Half Engine\hlResources\x64\Debug\hlResources.dll" "C:\Half Engine\Engine\bin"
@@ -148,7 +149,7 @@ copy "C:\Half Engine\hlResources\x64\Debug\hlResources.dll" "C:\Half Engine\x64\
       <PrecompiledHeaderFile>
       </PrecompiledHeaderFile>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>C:\Half Engine\3rdParty\assimp\include;C:\Half Engine\3rdParty\opengl\include;C:\Half Engine\3rdParty\assimp\build\include;C:\Half Engine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Half Engine\3rdParty\OGL;C:\Half Engine\hlResources\x64\Debug;C:\Half Engine\hlRender\x64\Release;C:\Half Engine\hlRender\x64\Debug;C:\Half Engine\hlGame\x64\Debug;C:\Half Engine\hlEngine\x64\Release;C:\Half Engine\hlEngine\x64\Debug;C:\Half Engine\hlEditor\x64\Debug;C:\Half Engine\hlCore\x64\Release;C:\Half Engine\hlCore\x64\Debug;C:\Half Engine\hlCore\Containers;C:\Half Engine\3rdParty\opengl\lib;C:\Half Engine\3rdParty\opengl\include;C:\Half Engine\3rdParty\ImGuiFileDialog;C:\Half Engine\3rdParty\imgui;C:\Half Engine\3rdParty\assimp\build\lib\Release;C:\Half Engine\3rdParty\assimp\build\include;C:\Half Engine\3rdParty\assimp;C:\Half Engine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -156,7 +157,7 @@ copy "C:\Half Engine\hlResources\x64\Debug\hlResources.dll" "C:\Half Engine\x64\
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
-      <AdditionalLibraryDirectories>C:\Half Engine\3rdParty\opengl\lib;C:\Half Engine\3rdParty\assimp\build\lib\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Half Engine\hlResources\x64\Debug;C:\Half Engine\hlRender\x64\Release;C:\Half Engine\hlRender\x64\Debug;C:\Half Engine\hlGame\x64\Debug;C:\Half Engine\hlEngine\x64\Release;C:\Half Engine\hlEngine\x64\Debug;C:\Half Engine\hlEditor\x64\Debug;C:\Half Engine\hlCore\x64\Release;C:\Half Engine\hlCore\x64\Debug;C:\Half Engine\hlCore\Containers;C:\Half Engine\3rdParty\opengl\lib;C:\Half Engine\3rdParty\opengl\include;C:\Half Engine\3rdParty\ImGuiFileDialog;C:\Half Engine\3rdParty\imgui;C:\Half Engine\3rdParty\assimp\build\lib\Release;C:\Half Engine\3rdParty\assimp\build\include;C:\Half Engine\3rdParty\assimp;C:\Half Engine;%(AdditionalIncludeDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>gdi32.lib;opengl32.lib;glu32.lib;glfw3.lib;assimp-vc143-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>

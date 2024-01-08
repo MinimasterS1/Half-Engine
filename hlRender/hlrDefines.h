@@ -6,7 +6,7 @@
 #include "Common.hpp"
 
 #include <glad/glad.h>
-#include <GLFW/glfw3.h>
+#include <glfw/glfw3.h>
 
 #include "hlCore/hlLogger.h"
 
@@ -23,4 +23,4 @@ extern bool EditorMode;
 
 
 
-#endif
+#endif 

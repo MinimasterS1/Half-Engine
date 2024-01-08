@@ -1,15 +1,16 @@
 #include "hlEditorConsole.h"
 
 
-Console::Console()
+EditorConsole::EditorConsole()
 {
 }
 
-Console::~Console()
+EditorConsole::~EditorConsole()
 {
 }
 
-void Console::DrawConsole()
+void EditorConsole::DrawConsole()
+
 {
 
     int w, h;
@@ -127,3 +128,5 @@ void Console::DrawConsole()
 
         });
 }
+
+

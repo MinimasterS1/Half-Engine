@@ -21,6 +21,9 @@
     <ClInclude Include="hlResources.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="stbImage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="hlResources.cpp">
@@ -29,8 +32,8 @@
     <ClCompile Include="..\3rdParty\opengl\glad.c">
       <Filter>Source Files\3rd</Filter>
     </ClCompile>
-    <ClCompile Include="..\hlEngine\stbImage.cpp">
-      <Filter>Source Files\3rd</Filter>
+    <ClCompile Include="stbImage.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
