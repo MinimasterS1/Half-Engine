@@ -21,12 +21,18 @@
     <ClInclude Include="hlMemory.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="hlTimer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="hlLogger.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="hlMemory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hlTimer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
