@@ -5,8 +5,11 @@
 #define BONE_H
 
 
-class hlBone
+#include "Common.hpp"
+
+class ANIMATION_API Bone
 {
+
 };
 
 #endif

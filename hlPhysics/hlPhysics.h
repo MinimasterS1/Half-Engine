@@ -3,8 +3,9 @@
 #ifndef PHYSICS_H
 #define PHYSICS_H
 
+#include "Common.hpp"
 
-class Physics
+class PHYSICS_API Physics
 {
 
 

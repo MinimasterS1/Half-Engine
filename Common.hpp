@@ -81,10 +81,24 @@ using string_path = char[max_path_size];
 
 #endif
 
-#ifdef RESOURCES_API_API_EXPORTS
+#ifdef RESOURCES_API_EXPORTS
 #define RESOURCES_API __declspec(dllexport)
 #else
 #define RESOURCES_API __declspec(dllimport)
+
+#endif
+
+#ifdef ANIMATION_API_EXPORTS
+#define ANIMATION_API __declspec(dllexport)
+#else
+#define ANIMATION_API __declspec(dllimport)
+
+#endif
+
+#ifdef PHYSICS_API_EXPORTS
+#define PHYSICS_API __declspec(dllexport)
+#else
+#define PHYSICS_API __declspec(dllimport)
 
 #endif
 

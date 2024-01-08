@@ -4,7 +4,9 @@
 #ifndef ANIMATION_H
 #define ANIMATION_H
 
-class Animation
+#include "Common.hpp"
+
+class ANIMATION_API Animation
 {
 
 };
