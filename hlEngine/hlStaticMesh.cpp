@@ -1,16 +1,16 @@
-#include "hlMesh.h"
+#include "hlStaticMesh.h"
 
 
-Mesh::Mesh() {}
+StaticMesh::StaticMesh() {}
 
-Mesh::Mesh(const Mesh& other) {
+StaticMesh::StaticMesh(const StaticMesh& other) {
     vertices = other.vertices;
     indices = other.indices;
     textures = other.textures;
     setupMesh();
 }
 
-Mesh::Mesh(Mesh&& other) noexcept {
+StaticMesh::StaticMesh(StaticMesh&& other) noexcept {
     VAO = other.VAO;
     VBO = other.VBO;
     EBO = other.EBO;
@@ -20,7 +20,7 @@ Mesh::Mesh(Mesh&& other) noexcept {
     other.VAO = other.VBO = other.EBO = 0;
 }
 
-Mesh& Mesh::operator=(const Mesh& other) {
+StaticMesh& StaticMesh::operator=(const StaticMesh& other) {
     if (this != &other) {
         vertices = other.vertices;
         indices = other.indices;
@@ -30,7 +30,7 @@ Mesh& Mesh::operator=(const Mesh& other) {
     return *this;
 }
 
-Mesh& Mesh::operator=(Mesh&& other) noexcept {
+StaticMesh& StaticMesh::operator=(StaticMesh&& other) noexcept {
     if (this != &other) {
         VAO = other.VAO;
         VBO = other.VBO;
@@ -43,7 +43,7 @@ Mesh& Mesh::operator=(Mesh&& other) noexcept {
     return *this;
 }
 
-Mesh::~Mesh() {
+StaticMesh::~StaticMesh() {
    // glDeleteVertexArrays(1, &VAO);
    // glDeleteBuffers(1, &VBO);
    // glDeleteBuffers(1, &EBO);
@@ -51,7 +51,7 @@ Mesh::~Mesh() {
 
 
 
-void Mesh::Initialize(vector<Vertex> vertices, vector<unsigned int> indices, vector<Texture> textures)
+void StaticMesh::Initialize(vector<Vertex> vertices, vector<unsigned int> indices, vector<Texture> textures)
 {
     this->vertices = vertices;
     this->indices = indices;
@@ -59,9 +59,9 @@ void Mesh::Initialize(vector<Vertex> vertices, vector<unsigned int> indices, vec
     setupMesh();
 }
 
-void Mesh::setMeshTextures(const std::vector<Texture>& newTextures) { textures = newTextures; }
+void StaticMesh::setMeshTextures(const std::vector<Texture>& newTextures) { textures = newTextures; }
 
-Mesh::Mesh(vector<Vertex> vertices, vector<unsigned int> indices, vector<Texture> textures)
+StaticMesh::StaticMesh(vector<Vertex> vertices, vector<unsigned int> indices, vector<Texture> textures)
 {
     this->vertices = vertices;
     this->indices = indices;
@@ -73,7 +73,7 @@ Mesh::Mesh(vector<Vertex> vertices, vector<unsigned int> indices, vector<Texture
 
 
 
-void Mesh::Draw(Shader& shader)
+void StaticMesh::Draw(Shader& shader)
 {
     unsigned int diffuseNr = 1;
     unsigned int specularNr = 1;
@@ -104,7 +104,7 @@ void Mesh::Draw(Shader& shader)
     glActiveTexture(GL_TEXTURE0);
 }
 
-void Mesh::setupMesh()
+void StaticMesh::setupMesh()
 {
     glGenVertexArrays(1, &VAO);
     glGenBuffers(1, &VBO);

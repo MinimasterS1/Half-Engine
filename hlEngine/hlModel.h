@@ -22,7 +22,7 @@
 
 #include <vector>
 
-#include "hlMesh.h"
+#include "hlStaticMesh.h"
 #include "hlShader.h"
 
 using namespace std;
@@ -53,7 +53,7 @@ public:
 
     void processNode(aiNode* node, const aiScene* scene);
 
-    Mesh processMesh(aiMesh* mesh, const aiScene* scene);
+    StaticMesh processMesh(aiMesh* mesh, const aiScene* scene);
 
     vector<Texture> loadMaterialTextures(aiMaterial* mat, aiTextureType type, string typeName);
 
@@ -64,7 +64,7 @@ private:
     void copyModelData(const Model& other);
     void clearModelData();
 
-    std::vector<Mesh> meshes;
+    std::vector<StaticMesh> meshes;
     std::vector<Texture> textures_loaded;
     std::string directory;
     bool gammaCorrection;

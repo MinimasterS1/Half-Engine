@@ -1,7 +1,7 @@
 #pragma once
 
-#ifndef MESH_H
-#define MESH_H
+#ifndef STATIC_MESH_H
+#define STATIC_MESH_H
 
 #include "hlDefines.h"
 #include <glad/glad.h> 
@@ -28,16 +28,16 @@ struct Texture {
     std::vector<unsigned char> data;
 };
 
-class ENGINE_API Mesh {
+class ENGINE_API StaticMesh {
 public:
-    Mesh();
-    Mesh(const Mesh& other);
-    Mesh(Mesh&& other) noexcept;
-    Mesh& operator=(const Mesh& other);
-    Mesh& operator=(Mesh&& other) noexcept;
-    ~Mesh();
+    StaticMesh();
+    StaticMesh(const StaticMesh& other);
+    StaticMesh(StaticMesh&& other) noexcept;
+    StaticMesh& operator=(const StaticMesh& other);
+    StaticMesh& operator=(StaticMesh&& other) noexcept;
+    ~StaticMesh();
 
-    Mesh(vector<Vertex> vertices, vector<unsigned int> indices, vector<Texture> textures);
+    StaticMesh(vector<Vertex> vertices, vector<unsigned int> indices, vector<Texture> textures);
 
     void setMeshTextures(const std::vector<Texture>& newTextures);
     void Initialize(vector<Vertex> vertices, vector<unsigned int> indices, vector<Texture> textures);

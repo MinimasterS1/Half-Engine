@@ -33,7 +33,7 @@
     <ClInclude Include="hlShader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="hlMesh.h">
+    <ClInclude Include="hlStaticMesh.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="hlModel.h">
@@ -43,6 +43,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="hlObjectList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hlSkeletalMesh.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -62,7 +65,7 @@
     <ClCompile Include="hlShader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="hlMesh.cpp">
+    <ClCompile Include="hlStaticMesh.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="hlModel.cpp">
@@ -85,6 +88,9 @@
     </ClCompile>
     <ClCompile Include="..\hlResources\stbImage.cpp">
       <Filter>Source Files\3rd</Filter>
+    </ClCompile>
+    <ClCompile Include="hlSkeletalMesh.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

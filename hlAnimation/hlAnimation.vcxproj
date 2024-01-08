@@ -19,43 +19,18 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="hlBaseCamera.h" />
-    <ClInclude Include="hlDefines.h" />
-    <ClInclude Include="hlEngine.h" />
-    <ClInclude Include="hlInput.h" />
-    <ClInclude Include="hlStaticMesh.h" />
-    <ClInclude Include="hlModel.h" />
-    <ClInclude Include="hlObject.h" />
-    <ClInclude Include="hlObjectList.h" />
-    <ClInclude Include="hlShader.h" />
-    <ClInclude Include="hlSkeletalMesh.h" />
+    <ClInclude Include="hlAnimation.h" />
+    <ClInclude Include="hlBone.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\3rdParty\opengl\glad.c" />
-    <ClCompile Include="..\hlRender\hlrDefines.cpp" />
-    <ClCompile Include="..\hlRender\hlRender.cpp" />
-    <ClCompile Include="..\hlResources\stbImage.cpp" />
-    <ClCompile Include="hlBaseCamera.cpp" />
-    <ClCompile Include="hlDefines.cpp" />
-    <ClCompile Include="hlEngine.cpp" />
-    <ClCompile Include="hlInput.cpp" />
-    <ClCompile Include="hlStaticMesh.cpp" />
-    <ClCompile Include="hlModel.cpp" />
-    <ClCompile Include="hlObject.cpp" />
-    <ClCompile Include="hlObjectList.cpp" />
-    <ClCompile Include="hlShader.cpp" />
-    <ClCompile Include="hlSkeletalMesh.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\hlCore\hlCore.vcxproj">
-      <Project>{cdce0fe5-38e1-4021-8654-f1faeb600dfd}</Project>
-    </ProjectReference>
+    <ClCompile Include="hlAnimation.cpp" />
+    <ClCompile Include="hlBone.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>16.0</VCProjectVersion>
+    <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{a96702e7-8229-4459-b0fd-661a5a0c338d}</ProjectGuid>
-    <RootNamespace>hlEngine</RootNamespace>
+    <ProjectGuid>{d2e3e674-5dc4-429b-92c2-0503b3981bdb}</ProjectGuid>
+    <RootNamespace>hlAnimation</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -103,15 +78,11 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
-    <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64)</LibraryPath>
-  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;_DEBUG;HLENGINE_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;HLANIMATION_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
@@ -120,7 +91,6 @@
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
-      <AdditionalDependencies>shell32.lib;gdi32.lib;user32.lib;opengl32.lib;glu32.lib;glfw3.lib;assimp-vc143-mt.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -129,7 +99,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;NDEBUG;HLENGINE_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;HLANIMATION_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
@@ -140,32 +110,30 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
-      <AdditionalDependencies>shell32.lib;gdi32.lib;user32.lib;opengl32.lib;glu32.lib;glfw3.lib;assimp-vc143-mt.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>
-      </PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;HLANIMATION_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>
       </PrecompiledHeaderFile>
-      <LanguageStandard>stdcpp17</LanguageStandard>
       <AdditionalIncludeDirectories>C:\Half Engine;C:\Half Engine\3rdParty\opengl\include;C:\Half Engine\3rdParty\assimp\build\include;C:\Half Engine\3rdParty\assimp\include;C:\Half Engine\3rdParty</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
-      <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
       <AdditionalLibraryDirectories>C:\Half Engine\3rdParty\opengl\lib;C:\Half Engine\3rdParty\assimp\build\lib\Release;C:\Half Engine\3rdParty\assimp;C:\Half Engine</AdditionalLibraryDirectories>
-      <AdditionalDependencies>shell32.lib;gdi32.lib;user32.lib;opengl32.lib;glu32.lib;glfw3.lib;assimp-vc143-mt.lib</AdditionalDependencies>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>copy "C:\Half Engine\hlEngine\x64\Debug\hlEngine.dll" "C:\Half Engine\Engine\bin"
-copy "C:\Half Engine\hlEngine\x64\Debug\hlEngine.dll" "C:\Half Engine\x64\Debug"</Command>
+      <Command>copy "C:\Half Engine\hlAnimation\x64\Debug\hlAnimation.dll" "C:\Half Engine\Engine\bin"
+copy "C:\Half Engine\hlAnimation\x64\Debug\hlAnimation.dll" "C:\Half Engine\x64\Debug"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -174,14 +142,10 @@ copy "C:\Half Engine\hlEngine\x64\Debug\hlEngine.dll" "C:\Half Engine\x64\Debug"
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>
-      </PreprocessorDefinitions>
+      <PreprocessorDefinitions>NDEBUG;HLANIMATION_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <PrecompiledHeaderFile>
-      </PrecompiledHeaderFile>
-      <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>C:\Half Engine;C:\Half Engine\3rdParty\opengl\include;C:\Half Engine\3rdParty\assimp\build\include;C:\Half Engine\3rdParty\assimp\include;C:\Half Engine\3rdParty</AdditionalIncludeDirectories>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -189,13 +153,7 @@ copy "C:\Half Engine\hlEngine\x64\Debug\hlEngine.dll" "C:\Half Engine\x64\Debug"
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
-      <AdditionalLibraryDirectories>C:\Half Engine\3rdParty\opengl\lib;C:\Half Engine\3rdParty\assimp\build\lib\Release;C:\Half Engine\3rdParty\assimp;C:\Half Engine</AdditionalLibraryDirectories>
-      <AdditionalDependencies>shell32.lib;gdi32.lib;user32.lib;opengl32.lib;glu32.lib;glfw3.lib;assimp-vc143-mt.lib</AdditionalDependencies>
     </Link>
-    <PostBuildEvent>
-      <Command>copy "C:\Half Engine\hlEngine\x64\Release\hlEngine.dll" "C:\Half Engine\Engine\bin"
-</Command>
-    </PostBuildEvent>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

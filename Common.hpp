@@ -1,5 +1,6 @@
 #pragma once
 
+#include <Windows.h>
 #include <cstdint>
 #include <limits>
 #include <cstring>
@@ -66,15 +67,12 @@ using string_path = char[max_path_size];
 
 #endif
 
-
-
 #ifdef ENGINE_API_EXPORTS
 #define ENGINE_API __declspec(dllexport)
 #else
 #define ENGINE_API __declspec(dllimport)
 
 #endif
-
 
 #ifdef RENDER_API_EXPORTS
 #define RENDER_API __declspec(dllexport)

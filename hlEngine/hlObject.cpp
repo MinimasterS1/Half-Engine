@@ -139,7 +139,7 @@ void Object::Draw(Camera& camera, int SCR_WIDTH, int SCR_HEIGHT)
 
 Object& Object::operator=(const Object& other) {
     if (this != &other) {
-        // Копирование членов данных из other в *this
+        
         this->Position = other.Position;
         this->Rotation = other.Rotation;
         this->Scale = other.Scale;
@@ -149,21 +149,13 @@ Object& Object::operator=(const Object& other) {
         this->TextureOffsetX = other.TextureOffsetX;
         this->TextureOffsetY = other.TextureOffsetY;
         this->TextureScale = other.TextureScale;
-        // Копирование других членов данных...
-
-        // Оператор присваивания для объекта Model (если требуется)
         this->model = other.model;
-
-        // Оператор присваивания для объекта Shader (если требуется)
         this->shader = other.shader;
-
-        // Оператор присваивания для вектора объектов (если требуется)
         this->objects = other.objects;
     }
 
     return *this;
 }
-
 
 
 

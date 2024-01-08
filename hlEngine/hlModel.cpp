@@ -33,7 +33,7 @@ void Model::Draw(Shader shader) {
 }
 
 void Model::setMeshTextures(const std::vector<Texture>& newTextures) {
-    for (Mesh& mesh : meshes) {
+    for (StaticMesh& mesh : meshes) {
         mesh.setMeshTextures(newTextures);
     }
 }
@@ -86,7 +86,7 @@ vector<Texture> Model::loadMaterialTextures(aiMaterial* mat, aiTextureType type,
     return textures;
 }
 
-Mesh Model::processMesh(aiMesh* mesh, const aiScene* scene)
+StaticMesh Model::processMesh(aiMesh* mesh, const aiScene* scene)
 {
     // Данные для заполнения
     vector<Vertex> vertices;
@@ -175,14 +175,14 @@ Mesh Model::processMesh(aiMesh* mesh, const aiScene* scene)
     textures.insert(textures.end(), heightMaps.begin(), heightMaps.end());
 
     // Возвращаем меш-объект, созданный на основе полученных данных
-    return Mesh(vertices, indices, textures);
+    return StaticMesh(vertices, indices, textures);
 }
 
 void Model::copyModelData(const Model& other) {
     directory = other.directory;
     gammaCorrection = other.gammaCorrection;
 
-   for (const Mesh& mesh : other.meshes) {
+   for (const StaticMesh& mesh : other.meshes) {
         meshes.push_back(mesh);
     }
 
@@ -204,7 +204,7 @@ void Model::SerializeModel(const std::string& filename)
     size_t meshCount = this->meshes.size();
     out.write(reinterpret_cast<const char*>(&meshCount), sizeof(size_t));
 
-    for (const Mesh& mesh : this->meshes) {
+    for (const StaticMesh& mesh : this->meshes) {
 
         size_t vertCount = mesh.vertices.size();
         out.write(reinterpret_cast<const char*>(&vertCount), sizeof(size_t));
@@ -234,7 +234,7 @@ void Model::DeserializeModel(const std::string& filename, const std::string& dir
     in.read(reinterpret_cast<char*>(&meshCount), sizeof(size_t));
     this->meshes.resize(meshCount);
 
-    for (Mesh& mesh : this->meshes) {
+    for (StaticMesh& mesh : this->meshes) {
 
         size_t vertCount;
         in.read(reinterpret_cast<char*>(&vertCount), sizeof(size_t));
