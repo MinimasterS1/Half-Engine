@@ -21,6 +21,7 @@
   <ItemGroup>
     <ClInclude Include="hlLogger.h" />
     <ClInclude Include="hlMemory.h" />
+    <ClInclude Include="hlModules.h" />
     <ClInclude Include="hlTimer.h" />
   </ItemGroup>
   <ItemGroup>
@@ -124,7 +125,7 @@
       <PrecompiledHeaderFile>
       </PrecompiledHeaderFile>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>C:\Half Engine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Half Engine\3rdParty\assimp\build\include;C:\Half Engine\3rdParty\assimp;C:\Half Engine\3rdParty\imgui;C:\Half Engine\3rdParty\ImGuiFileDialog;C:\Half Engine\3rdParty\opengl\include;C:\Half Engine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -150,7 +151,7 @@ copy "C:\Half Engine\hlCore\x64\Debug\hlCore.dll" "C:\Half Engine\x64\Debug"
       <PrecompiledHeaderFile>
       </PrecompiledHeaderFile>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>C:\Half Engine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Half Engine\3rdParty\assimp\build\include;C:\Half Engine\3rdParty\assimp;C:\Half Engine\3rdParty\imgui;C:\Half Engine\3rdParty\ImGuiFileDialog;C:\Half Engine\3rdParty\opengl\include;C:\Half Engine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>

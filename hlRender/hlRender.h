@@ -45,7 +45,7 @@ public:
 
     static void framebuffer_size_callback_static(GLFWwindow* window, int width, int height);
 
-    void CreateWindow();
+    void CreateRenderWindow();
 
     void RenderCycle();
 

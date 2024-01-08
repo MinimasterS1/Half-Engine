@@ -25,7 +25,7 @@ Render::~Render()
 
 void Render::startUp()
 {
-    CreateWindow();
+    CreateRenderWindow();
 
     EditorUI.reset(new Editor(window, "editor"));
 
@@ -54,7 +54,7 @@ void Render::framebuffer_size_callback_static(GLFWwindow* window, int width, int
     }
 }
 
-void Render::CreateWindow()
+void Render::CreateRenderWindow()
 {
     glfwInit();
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
